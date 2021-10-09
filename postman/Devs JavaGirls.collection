@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "208b2de8-9a3c-4905-a371-b6b007cd8d80",
+		"name": "Devs JavaGirls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"BRUNA\",\n  \"birthdate\": \"2021-10-08\",\n  \"rg\": \"string\",\n  \"cpf\": \"string\",\n  \"phone\": \"string\",\n  \"cellPhone\": \"string\",\n  \"email\": \"string\",\n  \"address\": {\n    \"street\": \"string\",\n    \"number\": \"string\",\n    \"district\": \"string\",\n    \"city\": \"string\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/javagirls/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"javagirls",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
