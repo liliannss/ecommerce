@@ -4,6 +4,9 @@ import br.com.devs.javagirl.user.models.UserEntity;
 import br.com.devs.javagirl.user.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
+
+import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -19,7 +22,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity findById(Long id) {
         return repository.findById(id)
-                .get();
+                .orElseThrow(() -> new ResponseStatusException(NOT_FOUND, "user.not.found"));
     }
-
 }

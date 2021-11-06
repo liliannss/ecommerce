@@ -1,6 +1,7 @@
 package br.com.devs.javagirl.user.controllers;
 
 import br.com.devs.javagirl.user.models.UserEntity;
+import br.com.devs.javagirl.user.models.dtos.ErrorDTO;
 import br.com.devs.javagirl.user.models.dtos.UserDTO;
 import br.com.devs.javagirl.user.services.UserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -39,7 +40,10 @@ public class UserController {
         UserEntity userEntity = mapper.map(userDTO, UserEntity.class);
         UserEntity userCreated = service.create(userEntity);
 
-        return mapper.map(userCreated, UserDTO.class);
+
+        UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
+        log.info("Finish method create={}", userDtoResponse);
+        return userDtoResponse;
     }
 
     @GetMapping("/{id}")
@@ -47,9 +51,12 @@ public class UserController {
     @Operation(summary = "Find User by Id")
     @ApiResponses(value = {
             @ApiResponse(description = "User consulted with Success", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class)))
+                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
+            @ApiResponse(description = "User consulted with Success", responseCode = "404",
+                    content = @Content(schema = @Schema(implementation = ErrorDTO.class)))
     })
     public UserDTO findById(@PathVariable Long id) {
+        log.info("Start method findById={}", id);
         UserEntity userConsulted = service.findById(id);
 
         return mapper.map(userConsulted, UserDTO.class);
