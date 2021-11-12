@@ -14,12 +14,13 @@ import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.servlet.http.HttpServletRequest;
-import java.sql.Timestamp;
-import java.time.Instant;
 import java.util.Collections;
 import java.util.List;
-import java.util.UUID;
 import java.util.stream.Collectors;
+
+import static java.sql.Timestamp.from;
+import static java.time.Instant.now;
+import static java.util.UUID.randomUUID;
 
 @AllArgsConstructor
 @RestControllerAdvice
@@ -29,7 +30,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(ResponseStatusException.class)
     public ResponseEntity<Object> responseStatusException(ResponseStatusException ex) {
-        return handleExceptionInternal(ex, getErrorDTO(ex.getStatus(), Collections.singletonList(ex.getMessage()), httpServletRequest), null, ex.getStatus(),null);
+        return handleExceptionInternal(ex, getErrorDTO(ex.getStatus(), Collections.singletonList(ex.getMessage()), httpServletRequest), null, ex.getStatus(), null);
     }
 
     @Override
@@ -55,8 +56,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 .path(httpServletRequest.getRequestURL().toString())
                 .method(httpServletRequest.getMethod())
                 .message(message)
-                .errorId(UUID.randomUUID().toString())
-                .instantCreated(Timestamp.from(Instant.now()))
+                .errorId(randomUUID().toString())
+                .instantCreated(from(now()))
                 .build();
     }
 }
