@@ -11,14 +11,17 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.lang.reflect.Type;
+import java.util.List;
 
 import static org.springframework.http.HttpStatus.CREATED;
+import static org.springframework.http.HttpStatus.OK;
 
 @Log4j2
 @Validated
@@ -52,7 +55,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(OK)
     @Operation(summary = "Find User by Id")
     @ApiResponses(value = {
             @ApiResponse(description = "User consulted with Success", responseCode = "200",
@@ -65,5 +68,23 @@ public class UserController {
         UserEntity userConsulted = service.findById(id);
 
         return mapper.map(userConsulted, UserDTO.class);
+    }
+
+    @GetMapping
+    @ResponseStatus(OK)
+    @Operation(summary = "Find User by Name and Email")
+    @ApiResponses(value = {
+            @ApiResponse(description = "User consulted with Success", responseCode = "200",
+                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
+            @ApiResponse(description = "User consulted with Success", responseCode = "202",
+                    content = @Content(schema = @Schema(implementation = UserDTO.class)))
+    })
+    public List<UserDTO> findByNameAndEmail(@RequestParam String name, String email) {
+        log.info("Start method findByNameAndEmail name={} email={}", name, email);
+        List<UserEntity> userEntityList = service.findByNameOrEmail(name, email);
+
+        Type typeList = new TypeToken<List<UserDTO>>() {}.getType();
+
+        return mapper.map(userEntityList, typeList);
     }
 }

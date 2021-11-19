@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
+
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @Service
@@ -23,5 +25,10 @@ public class UserServiceImpl implements UserService {
     public UserEntity findById(Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(NOT_FOUND, "user.not.found"));
+    }
+
+    @Override
+    public List<UserEntity> findByNameOrEmail(String name, String email) {
+        return repository.findByNameOrEmailContainingAllIgnoreCase(name, email);
     }
 }
