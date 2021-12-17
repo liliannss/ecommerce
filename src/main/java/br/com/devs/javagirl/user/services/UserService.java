@@ -6,7 +6,11 @@ import java.util.List;
 
 public interface UserService {
 
-    UserEntity create(UserEntity userEntity);
+    UserEntity createFeign(String cep, UserEntity userEntity);
+    UserEntity createWebClient(String cep, UserEntity userEntity);
+    UserEntity createRestTemplate(String cep, UserEntity userEntity);
     UserEntity findById(Long id);
-    List<UserEntity> findByNameOrEmail(String name, String email);
+    List<UserEntity> findByNameAndEmailQueryMethods(String name, String email);
+    List<UserEntity> findByNameAndEmailJPQL(String name, String email);
+    List<UserEntity> findByNameAndEmailNativeQuery(String name, String email);
 }

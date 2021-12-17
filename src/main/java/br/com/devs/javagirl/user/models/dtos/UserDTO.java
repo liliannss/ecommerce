@@ -25,6 +25,7 @@ public class UserDTO {
     private String rg;
 
     @CPF
+    @Schema(example = "29583329002")
     private String cpf;
 
     private String phone;
@@ -32,7 +33,6 @@ public class UserDTO {
     private String cellPhone;
 
     @Email
+    @Schema(example = "test@test")
     private String email;
-
-    private Address address;
 }
