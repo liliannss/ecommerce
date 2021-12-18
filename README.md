@@ -1,5 +1,5 @@
 ![](images/logo.jpg)
-# E-COMMERCE DEVS-JAVAGIRL
+# E-COMMERCE Devs Java Girl
 
 ### Contexto geral (problema)
 
@@ -45,18 +45,17 @@ ________________________________________________________________________________
 - Endpoint de consulta de camisetas por cor
 - Endpoint de consulta de camisetas por tamanho
 
-**Requisitos Funcionais**
-
+## Requisitos Funcionais
 ### Cadastro de Produto
 - Para cadastro de um produto deverá obrigatoriamente ser informado:
     - Nome do modelo
     - Valor
     - Cores disponíveis
-    - Modelagem:
+    - Modelagem
       - Masculina Gola Olímpica
       - Feminina Gola U
       - Feminina Gola Olímpica
-    - Tamanhos disponíveis:
+    - Tamanhos disponíveis
       - P
       - M
       - G
@@ -69,9 +68,9 @@ ________________________________________________________________________________
 
 **Validações**
 - Não será possível o cadastro de mais de um modelo com o mesmo nome
-- O padrão monetário adotado será o REAL (duas casas decimais separada por vírgula)
+- O padrão monetário adotado será o REAL (duas casas decimais separadas por vírgula)
 - Não será possível o cadastro de mais de uma cor com o mesmo nome
-- O total em estoque não deverá ultrapassar 100 unidades
+- O total em estoque não deverá ultrapassar 100 unidades por modelo
 
 **Critério de Aceite**
 - O produto deverá ser inserido no Banco de Dados de acordo com as regras de validações
@@ -80,7 +79,7 @@ ________________________________________________________________________________
 - Para cadastro de uma venda obrigatoriamente deverá ser informado:
     - Código do cliente
     - Código do produto
-    - Quantidade de unidades
+    - Quantidade de unidades a serem compradas
 
 **Validações**
 - A quantidade vendida não poderá ultrapassar o total de 10 unidades por cliente
@@ -89,168 +88,165 @@ ________________________________________________________________________________
 - A venda deverá ser inserida no Banco de Dados de acordo com as regras de validações
 
 **Bônus**
-- Adicionar campo para avaliação das compras realizadas
+- Adicionar campo livre para avaliação das compras realizadas por determinado cliente
+- O campo deverá constar na listagem dos produtos
 
 ### Cadastro de Usuário
 - Para cadastro de um usuário deverá obrigatoriamente ser informado:
-    - Nome Completo
-    - Data de Nascimento
+    - Nome completo
+    - Data de nascimento
     - RG
     - CPF
-    - Telefone fixo / celular
+    - Telefone fixo
+    - Telefone celular
     - E-mail
     - Endereço
 
 **Validações**
-- Não será permitido o cadastro de usuário menor de 18 anos
-- RG e CPF devem ser números válidos e únicos
+- Não será permitido o cadastro de um usuário menor de 18 anos
+- RG e CPF devem ser números válidos e únicos por usuário
 - O E-mail informado deverá ser válido e único por usuário
-- O CEP do endereço deverá ser informado
+- O CEP do endereço deverá ser informado obrigatoriamente
 
 **Critério de Aceite**
 - O usuário deverá ser inserido no Banco de Dados de acordo com as regras de validações
 
 ### Consulta de Usuário
-- Consulta de usuário cadastrado por nome
-- Consulta de usuário cadastrado por e-mail
-- Consulta de usuário cadastrado por endereço
+- Consulta por nome
+- Consulta por e-mail
+- Consulta por endereço
 
 **Validações**
-- Requisito Funcional Geral - RFG1
+- Requisito Funcional Geral - RFG1 (vide abaixo)
 
 ### Cadastro de Entrega
 - Para cadastro de uma entrega deverá obrigatoriamente ser informado:
     - Código da venda
 
 **Critério de Aceite**
-- Deverá ser informado o valor do frete e prazo de entrega
-- Requisito Funcional Geral - RFG1
-- As consultas deverão ser paginadas de 15 em 15 registros, caso nenhum registro corresponda ao critério de busca deverá retornar uma lista vazia.
+- Deverá ser informado ao usuário o valor do frete e prazo de entrega
+- Requisito Funcional Geral - RFG1 (vide abaixo)
+
+### Requisito Funcional Geral - RFG1
+- As consultas deverão ser paginadas de 15 em 15 registros e caso nenhum registro corresponda ao critério de busca deverá ser retornada uma lista vazia
 
 ### Requisitos Não Funcionais
-
-- Linguagem de Programação: Java 11
-- Gerenciador de dependências: Maven
-- Framework: Spring
-- Banco de Dados: H2
-- Documentação API: OpenAPI
+- Linguagem de Programação
+  - Java 11
+- Gerenciador de dependências
+  - Maven
+- Framework
+  - Spring
+- Banco de Dados
+  - H2
+- Documentação API
+  - OpenAPI
 
 ### Evolução dos Requisitos Não Funcionais
-
-- Banco de Dados: Postgres
+- Banco de Dados
+  - Postgres
 - Spring Cloud
     - Ribbon
     - Resilience4J
     - Eureka
     - Zuul
     - Config Server
+
+_Referência_
+- https://www.udemy.com/course/microsservicos-java-spring-cloud
+
+
 - Autenticação e Autorização
     - OAuth
     - JWT
     - Keycloak
 
 ### Disponibilização da Aplicação
-
 - Docker
 - Heroku
-    - https://www.udemy.com/course/microsservicos-java-spring-cloud/
-- Outros
-    - Auditoria Banco de Dados
-    - Normalização dos dados
-    - Consulta com filtros utilizando Specification ou QueryDSL
-    - Liquibase como controle de versão da Base de Dados
+
+### Adicionais
+- Auditoria Banco de Dados
+- Normalização dos dados
+- Consulta com filtros utilizando Specification ou QueryDSL
+- Liquibase como controle de versão da Base de Dados
 
 ### CI/CD
-
 - Travis CI ou GitHub Actions
-- Sugestões de conteúdo / ferramentas:
-    - https://medium.com/codigorefinado/code-review-revis%C3%A3o-de-c%C3%B3digo-pode-ser-automatizada-ba5f25882774
-    - https://medium.com/thiagobarradas/an%C3%A1lise-cont%C3%ADnua-de-qualidade-do-software-bb7b03518bcc
-    - https://imasters.com.br/cloud/spring-boot-na-nuvem-de-graca-e-com-as-melhores-praticas
+
+_Referências:_
+- https://medium.com/codigorefinado/code-review-revis%C3%A3o-de-c%C3%B3digo-pode-ser-automatizada-ba5f25882774
+- https://medium.com/thiagobarradas/an%C3%A1lise-cont%C3%ADnua-de-qualidade-do-software-bb7b03518bcc
+- https://imasters.com.br/cloud/spring-boot-na-nuvem-de-graca-e-com-as-melhores-praticas
 
 ### Cobertura de Código
-
-- Ferramenta de Coverage
-    - Codacy
-    - Codecov
+- Codecov
 
 ## Testes Unitários
-- Mínimo de 80% de cobertura
+- JUnit5
 
 ## Observabilidade
-
 - Prometheus
 - Grafana
 - Loki
 - Jaeger
 - ELK
-- Sugestões de conteúdo / ferramentas:
-    - https://github.com/liliannss/observabilidade
 
+_Referência:_
+- https://github.com/liliannss/observabilidade
 
-## Detalhes de Implementação
-
+## Guia de Implementação
 - Inicialização do projeto
     - https://start.spring.io/
 
 
 - Estrutura de pacotes
-    - Controllers -> Camada de Entrada /  Saída das requisições
-    - Models -> Modelos de domínio
-    - Services -> Classes de serviços
-- Repositories -> Camada de manipulação de dados
+    - Controllers
+        - Requisições (entrada / saída de dados)
+    - Models
+        - Modelos de domínio
+    - Services
+        - Classes de serviços
+    - Repositories
+        - Camada de manipulação de dados
 
+### Pontos abordados
 
-- Visualizando ramo de dependências do projeto
-    - mvn dependency:tree
+✅ **H2**
+- https://howtodoinjava.com/spring-boot2/h2-database-example/
 
+✅ **ResponseEntity**
+- Retornando id do recurso criado no Location:
+    - https://github.com/algaworks/workshop-rest-spring/blob/master/Adicionando%20o%20recurso%20Autor%20%C3%A0%20nossa%20API/src/main/java/com/algaworks/socialbooks/resources/LivrosResources.java
 
-- Banco de Dados
-  - H2
+✅ **Logs**
 
+✅ **Enums**
 
-- Configurações arquivo.properties:
-    - https://howtodoinjava.com/spring-boot2/h2-database-example/
+✅ **Classes Embedadas**
 
+✅ **DTO (Data Transfer Object)**
 
-### Guide Projeto
+✅ **Validações com Spring**
 
-**ResponseEntity**
+✅ **Mapper**
 
-**ResponseEntity como padrão de mercado**
+✅ **Lombok**
 
-**Retornando id do recurso criado no Location**
-- https://github.com/algaworks/workshop-rest-spring/blob/master/Adicionando%20o%20recurso%20Autor%20%C3%A0%20nossa%20API/src/main/java/com/algaworks/socialbooks/resources/LivrosResources.java
+✅ **ModelMapper**
 
-**Logs**
-
-**Enums**
-
-**Classes Embedadas**
-
-**DTO (Data Transfer Object)**
-
-**Validações com Spring**
-
-**Mapper**
-
-**Lombok**
-
-**ModelMapper**
-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper/2.4.4
-
-**Swagger**
+✅ **Swagger**
 - http://localhost:8081/javagirls/swagger-ui/index.html
 
-**Versionamento de API**
+✅ **Versionamento de API**
 - /v1/users
 
-**Context Path**
+✅ **Context Path**
 - server.servlet.context-path=/javagirls
 
-**Exception Handler**
+✅ **Exception Handler**
 
-**Consultas**
+✅ **Consultas**
 - Query Methods
 - JPQL
     - https://www.baeldung.com/spring-data-jpa-query
@@ -259,18 +255,18 @@ https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-usi
     - http://www.h2database.com/html/functions.html#lower
 - Consulta paginada
 
-**Consumo de WebService**
+✅ **Consumo de WebService**
 - Feign
 - WebClient
 - RestTemplate
     - https://dev.to/daienelima/como-consumir-uma-api-na-sua-aplicacao-spring-boot-3p3a
 
-**Variável de ambiente com Spring**
+✅ **Variável de ambiente com Spring**
 
-**Arquivo data.sql**
+✅ **Arquivo data.sql**
 - A nomenclatura do arquivo deve ser data.sql
 
-**Flyway**
+✅ **Flyway**
 - https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 - Boas Práticas:
     - V01__criar_e_registrar_categorias.sql
@@ -279,12 +275,11 @@ https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-usi
     - Separar por dois underscores (obrigatório);
     - Escrever o que a migração faz separando por um underscore.
 
-**Comandos Maven**
+✅ **Comandos Maven**
 - https://gist.github.com/erkobridee/3287943
 
-**Readme**
+✅ **Readme**
 
-**Pontos de Melhoria**
-
-- Inclusão de Teste Unitário
+### Pontos de Melhoria
+- Testes Unitários
 - Utilizar versão mais atual do Spring com Spring Cloud para uso do Feign
