@@ -1,8 +1,9 @@
-package br.com.devs.javagirl.user.services;
+package br.com.devs.javagirl.user.services.impl;
 
 import br.com.devs.javagirl.user.models.Address;
 import br.com.devs.javagirl.user.models.UserEntity;
 import br.com.devs.javagirl.user.repositories.UserRepository;
+import br.com.devs.javagirl.user.services.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
