@@ -2,24 +2,31 @@ package br.com.devs.javagirl.user.controllers;
 
 import br.com.devs.javagirl.user.models.UserEntity;
 import br.com.devs.javagirl.user.models.dtos.ErrorDTO;
-import br.com.devs.javagirl.user.models.dtos.UserDTO;
+import br.com.devs.javagirl.user.models.dtos.UserRequestDTO;
+import br.com.devs.javagirl.user.models.dtos.UserResponseDTO;
 import br.com.devs.javagirl.user.services.UserService;
-import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import java.lang.reflect.Type;
-import java.util.List;
-import javax.validation.Valid;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.lang.reflect.Type;
+import java.util.List;
+
+import static org.springframework.data.domain.PageRequest.of;
+import static org.springframework.data.domain.Sort.Direction.valueOf;
+import static org.springframework.data.domain.Sort.by;
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.OK;
 
@@ -40,58 +47,58 @@ public class UserController {
     @Operation(summary = "Create a New User")
     @ApiResponses(value = {
             @ApiResponse(description = "User Created with Success", responseCode = "201",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
             @ApiResponse(description = "Bad Request", responseCode = "400",
                     content = @Content(schema = @Schema(implementation = ErrorDTO.class)))
     })
-    public UserDTO createFeign(@PathVariable String cep, @Valid @RequestBody UserDTO userDTO) {
-        log.info("Start method createFeign={}", userDTO);
-        UserEntity userEntity = mapper.map(userDTO, UserEntity.class);
+    public UserResponseDTO createFeign(@PathVariable String cep, @Valid @RequestBody UserRequestDTO userRequestDTO) {
+        log.info("Start method createFeign={}", userRequestDTO);
+        UserEntity userEntity = mapper.map(userRequestDTO, UserEntity.class);
         UserEntity userCreated = service.createFeign(cep, userEntity);
 
-        UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
+        UserResponseDTO userDtoResponse = mapper.map(userCreated, UserResponseDTO.class);
         log.info("Finish method createFeign={}", userDtoResponse);
 
         return userDtoResponse;
     }
 
-    @Hidden
+    //@Hidden
     @PostMapping("/{cep}/web-client")
     @ResponseStatus(CREATED)
     @Operation(summary = "Create a New User")
     @ApiResponses(value = {
             @ApiResponse(description = "User Created with Success", responseCode = "201",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
             @ApiResponse(description = "Bad Request", responseCode = "400",
                     content = @Content(schema = @Schema(implementation = ErrorDTO.class)))
     })
-    public UserDTO createWebClient(@PathVariable String cep, @Valid @RequestBody UserDTO userDTO) {
-        log.info("Start method createWebClient={}", userDTO);
-        UserEntity userEntity = mapper.map(userDTO, UserEntity.class);
-        UserEntity userCreated = service.createWebClient(cep, userEntity);
+    public UserResponseDTO createWebClient(@PathVariable String cep, @Valid @RequestBody UserRequestDTO userRequestDTO) {
+        log.info("Start method createWebClient={}", userRequestDTO);
+        UserEntity userEntity = mapper.map(userRequestDTO, UserEntity.class);
+        UserEntity userCreated = service.createFeign(cep, userEntity);
 
-        UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
+        UserResponseDTO userDtoResponse = mapper.map(userCreated, UserResponseDTO.class);
         log.info("Finish method createWebClient={}", userDtoResponse);
 
         return userDtoResponse;
     }
 
-    @Hidden
+    //@Hidden
     @PostMapping("/{cep}/rest-template")
     @ResponseStatus(CREATED)
     @Operation(summary = "Create a New User")
     @ApiResponses(value = {
             @ApiResponse(description = "User Created with Success", responseCode = "201",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
             @ApiResponse(description = "Bad Request", responseCode = "400",
                     content = @Content(schema = @Schema(implementation = ErrorDTO.class)))
     })
-    public UserDTO createRestTemplate(@PathVariable String cep, @Valid @RequestBody UserDTO userDTO) {
-        log.info("Start method createRestTemplate={}", userDTO);
-        UserEntity userEntity = mapper.map(userDTO, UserEntity.class);
+    public UserResponseDTO createRestTemplate(@PathVariable String cep, @Valid @RequestBody UserRequestDTO userRequestDTO) {
+        log.info("Start method createRestTemplate={}", userRequestDTO);
+        UserEntity userEntity = mapper.map(userRequestDTO, UserEntity.class);
         UserEntity userCreated = service.createRestTemplate(cep, userEntity);
 
-        UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
+        UserResponseDTO userDtoResponse = mapper.map(userCreated, UserResponseDTO.class);
         log.info("Finish method createRestTemplate={}", userDtoResponse);
 
         return userDtoResponse;
@@ -102,15 +109,15 @@ public class UserController {
     @Operation(summary = "Find User by Id")
     @ApiResponses(value = {
             @ApiResponse(description = "User consulted with Success", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
             @ApiResponse(description = "User Not Found", responseCode = "404",
                     content = @Content(schema = @Schema(implementation = ErrorDTO.class)))
     })
-    public UserDTO findById(@PathVariable Long id) {
+    public UserResponseDTO findById(@PathVariable Long id) {
         log.info("Start method findById={}", id);
         UserEntity userConsulted = service.findById(id);
 
-        UserDTO userDTO = mapper.map(userConsulted, UserDTO.class);
+        UserResponseDTO userDTO = mapper.map(userConsulted, UserResponseDTO.class);
         log.info("Finish method findById={}", userDTO);
 
         return userDTO;
@@ -121,59 +128,74 @@ public class UserController {
     @Operation(summary = "Find User by Name and Email - Query Methods")
     @ApiResponses(value = {
             @ApiResponse(description = "User consulted with Success", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
-            @ApiResponse(description = "User consulted with Success", responseCode = "202",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class)))
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
     })
-    public List<UserDTO> findByNameAndEmailQueryMethods(@RequestParam String name, String email) {
+    public List<UserResponseDTO> findByNameAndEmailQueryMethods(@RequestParam String name, String email) {
         log.info("Start method findByNameAndEmailQueryMethods name={} email={}", name, email);
         List<UserEntity> userEntityList = service.findByNameAndEmailQueryMethods(name, email);
 
-        Type typeList = new TypeToken<List<UserDTO>>() {}.getType();
+        Type typeList = new TypeToken<List<UserResponseDTO>>() {
+        }.getType();
 
         //TODO adicionar log
         return mapper.map(userEntityList, typeList);
     }
 
-    @Hidden
+    //@Hidden
     @GetMapping("/jpql")
     @ResponseStatus(OK)
     @Operation(summary = "Find User by Name and Email - JPQL")
     @ApiResponses(value = {
             @ApiResponse(description = "User consulted with Success", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
-            @ApiResponse(description = "User consulted with Success", responseCode = "202",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class)))
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
     })
-    public List<UserDTO> findByNameAndEmailJPQL(@RequestParam String name, @RequestParam String email) {
+    public List<UserResponseDTO> findByNameAndEmailJPQL(@RequestParam String name, @RequestParam String email) {
         log.info("Start method findByNameAndEmailJPQL name={} email={}", name, email);
         List<UserEntity> userEntityList = service.findByNameAndEmailJPQL(name, email);
 
-        Type typeList = new TypeToken<List<UserDTO>>() {
+        Type typeList = new TypeToken<List<UserResponseDTO>>() {
         }.getType();
 
         //TODO adicionar log
         return mapper.map(userEntityList, typeList);
     }
 
-    @Hidden
+    //@Hidden
     @GetMapping("/native-query")
     @ResponseStatus(OK)
     @Operation(summary = "Find User by Name and Email - Native Query")
     @ApiResponses(value = {
             @ApiResponse(description = "User consulted with Success", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class))),
-            @ApiResponse(description = "User consulted with Success", responseCode = "202",
-                    content = @Content(schema = @Schema(implementation = UserDTO.class)))
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
     })
-    public List<UserDTO> findByNameAndEmailNativeQuery(@RequestParam String name, @RequestParam String email) {
+    public List<UserResponseDTO> findByNameAndEmailNativeQuery(@RequestParam String name, @RequestParam String email) {
         log.info("Start method findByNameAndEmailNativeQuery name={} email={}", name, email);
         List<UserEntity> userEntityList = service.findByNameAndEmailNativeQuery(name, email);
 
-        Type typeList = new TypeToken<List<UserDTO>>() {
+        Type typeList = new TypeToken<List<UserResponseDTO>>() {
         }.getType();
 
         //TODO adicionar log
+        return mapper.map(userEntityList, typeList);
+    }
+
+    @GetMapping("paginated")
+    @ResponseStatus(OK)
+    @Operation(summary = "Find User by Name and Email - Paginated")
+    @ApiResponses(value = {
+            @ApiResponse(description = "User consulted with Success", responseCode = "200",
+                    content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
+    })
+    public Page<UserResponseDTO> findByNameAndEmailPaginated(
+            @RequestParam(value = "page", defaultValue = "0") Integer page,
+            @RequestParam(value = "size", defaultValue = "10") Integer size,
+            @RequestParam(value = "direction", defaultValue = "ASC") String direction,
+            @RequestParam(value = "sort", defaultValue = "id") String sort) {
+
+        Page<UserEntity> userEntityList = service.findByNameAndEmailPaginated(of(page, size, by(valueOf(direction), sort)));
+
+        Type typeList = new TypeToken<Page<UserResponseDTO>>() {}.getType();
+
         return mapper.map(userEntityList, typeList);
     }
 

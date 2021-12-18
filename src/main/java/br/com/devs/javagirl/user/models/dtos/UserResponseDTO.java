@@ -1,6 +1,7 @@
 package br.com.devs.javagirl.user.models.dtos;
 
 import br.com.devs.javagirl.user.models.Address;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,12 +15,14 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDTO {
+public class UserResponseDTO {
 
-    @Schema(example = "BRUNA")
+    @Schema(example = "TESTE")
     @NotBlank(message = "Name required")
+    @JsonProperty(value = "nome")
     private String name;
 
+    @JsonProperty(value = "nascimento")
     private LocalDate birthdate;
 
     private String rg;
@@ -28,11 +31,16 @@ public class UserDTO {
     @Schema(example = "29583329002")
     private String cpf;
 
+    @JsonProperty(value = "telefone")
     private String phone;
 
+    @JsonProperty(value = "celular")
     private String cellPhone;
 
     @Email
     @Schema(example = "test@test")
     private String email;
+
+    @JsonProperty(value = "endereco")
+    private Address address;
 }

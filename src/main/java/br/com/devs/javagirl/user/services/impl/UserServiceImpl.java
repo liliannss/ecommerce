@@ -6,6 +6,8 @@ import br.com.devs.javagirl.user.repositories.UserRepository;
 import br.com.devs.javagirl.user.services.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -92,6 +94,11 @@ public class UserServiceImpl implements UserService {
 
         log.info("UserEntity found={}", userEntity);
         return userEntity;
+    }
+
+    @Override
+    public Page<UserEntity> findByNameAndEmailPaginated(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 
 }
