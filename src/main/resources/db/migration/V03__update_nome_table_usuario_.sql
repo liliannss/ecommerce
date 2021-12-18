@@ -1,0 +1,1 @@
+UPDATE usuario SET nome = 'TESTE' WHERE nome = 'TEST'
