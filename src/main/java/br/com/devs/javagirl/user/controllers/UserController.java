@@ -51,6 +51,7 @@ public class UserController {
 
         UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
         log.info("Finish method createFeign={}", userDtoResponse);
+
         return userDtoResponse;
     }
 
@@ -71,6 +72,7 @@ public class UserController {
 
         UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
         log.info("Finish method createWebClient={}", userDtoResponse);
+
         return userDtoResponse;
     }
 
@@ -91,6 +93,7 @@ public class UserController {
 
         UserDTO userDtoResponse = mapper.map(userCreated, UserDTO.class);
         log.info("Finish method createRestTemplate={}", userDtoResponse);
+
         return userDtoResponse;
     }
 
@@ -126,10 +129,9 @@ public class UserController {
         log.info("Start method findByNameAndEmailQueryMethods name={} email={}", name, email);
         List<UserEntity> userEntityList = service.findByNameAndEmailQueryMethods(name, email);
 
-        Type typeList = new TypeToken<List<UserDTO>>() {
-        }.getType();
+        Type typeList = new TypeToken<List<UserDTO>>() {}.getType();
 
-        //TODO rever
+        //TODO adicionar log
         return mapper.map(userEntityList, typeList);
     }
 
