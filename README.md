@@ -254,10 +254,14 @@ _Referência:_
 
 ### Pontos abordados
 
-✅ **H2**
+✅ **H2** http://localhost:8081/javagirls/h2-console
+
+_Referência_
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
 ✅ **ResponseEntity**
+
+_Referência_
 - Retornando id do recurso criado no Location:
     - https://github.com/algaworks/workshop-rest-spring/blob/master/Adicionando%20o%20recurso%20Autor%20%C3%A0%20nossa%20API/src/main/java/com/algaworks/socialbooks/resources/LivrosResources.java
 
@@ -277,31 +281,34 @@ _Referência:_
 
 ✅ **ModelMapper**
 
-✅ **Swagger**
-- http://localhost:8081/javagirls/swagger-ui/index.html
+✅ **Swagger** http://localhost:8081/javagirls/swagger-ui/index.html
 
 ✅ **Versionamento de API**
 - /v1/users
 
 ✅ **Context Path**
-- server.servlet.context-path=/javagirls
+- /javagirls
 
 ✅ **Exception Handler**
 
 ✅ **Consultas**
 - Query Methods
 - JPQL
-    - https://www.baeldung.com/spring-data-jpa-query
-      https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-using-query-annotation.html
 - Query Nativa
-    - http://www.h2database.com/html/functions.html#lower
 - Consulta paginada
+
+_Referências_
+- https://www.baeldung.com/spring-data-jpa-query
+- https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-using-query-annotation.html
+- http://www.h2database.com/html/functions.html#lower
 
 ✅ **Consumo de WebService**
 - Feign
 - WebClient
 - RestTemplate
-    - https://dev.to/daienelima/como-consumir-uma-api-na-sua-aplicacao-spring-boot-3p3a
+
+_Referência_
+- https://dev.to/daienelima/como-consumir-uma-api-na-sua-aplicacao-spring-boot-3p3a
 
 ✅ **Variável de ambiente com Spring**
 
@@ -309,7 +316,6 @@ _Referência:_
 - A nomenclatura do arquivo deve ser data.sql
 
 ✅ **Flyway**
-- https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 - Boas Práticas:
     - V01__criar_e_registrar_categorias.sql
     - Iniciar com V maiúsculo;
@@ -317,12 +323,19 @@ _Referência:_
     - Separar por dois underscores (obrigatório);
     - Escrever o que a migração faz separando por um underscore.
 
+_Referência_
+- https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
+
 ✅ **Comandos Maven**
+
+_Referência_
 - https://gist.github.com/erkobridee/3287943
 
 ✅ **Readme**
 
 ✅ **Mocks**
+
+_Referências_
 - https://www.4devs.com.br/
 - https://www.mockaroo.com/
 
