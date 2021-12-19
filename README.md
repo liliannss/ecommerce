@@ -256,7 +256,7 @@ ________________________________________________________________________________
     - Repositories
         - Camada de manipulação de dados
 
-### Tecnologias Abordadas
+## Tecnologias Abordadas
 _________________________________________________________________________________
 
 ✅ **H2** http://localhost:8081/javagirls/h2-console
@@ -342,7 +342,8 @@ _Referências_
 - https://www.4devs.com.br/
 - https://www.mockaroo.com/
 
-### Pontos de Melhoria
+## Melhorias
+_________________________________________________________________________________
 
 - Testes Unitários
 - Utilizar versão mais atual do Spring e corrigir possíveis erros de dependências
