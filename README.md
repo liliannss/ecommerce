@@ -153,7 +153,6 @@ ________________________________________________________________________________
 **Critério de Aceite**
 
 - Deverá ser informado ao usuário o valor do frete e prazo de entrega
-- Requisito Funcional Geral - RFG1 (vide abaixo)
 
 ### Requisito Funcional Geral - RFG1
 
