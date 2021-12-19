@@ -3,7 +3,7 @@
 # E-Commerce Devs Java Girl 💁
 Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliar em partes na construção do desafio proposto.
 
-O escopo do desafio é a implementação de um sistema e-commerce de acordo com as regras definidas aqui, refinadas, corrigidas e ou evoluídas pela pessoa que está implementando.
+Foi definido um escopo parcial para criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critétio da pessoa que está implementando.
 
 Também fica a critério de quem está implementando a escolha das tecnologias e arquitetura que serão utilizadas sendo importante ressaltar que as tecnologias apresentadas aqui são direcionadas ao Java e Spring Framework. 
 
@@ -254,7 +254,7 @@ ________________________________________________________________________________
     - Repositories
         - Camada de manipulação de dados
 
-## Tecnologias Abordadas
+## Tecnologias e Conceitos Abordados
 _________________________________________________________________________________
 
 ✅ **H2** http://localhost:8081/javagirls/h2-console
@@ -344,4 +344,4 @@ _Referências_
 _________________________________________________________________________________
 
 - Testes Unitários
-- Utilizar versão mais atual do Spring e corrigir possíveis erros de dependências
+- Utilizar versão mais recente do Spring e corrigir possíveis erros de dependências
