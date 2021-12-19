@@ -348,5 +348,5 @@ _Referências_
 ## Melhorias
 _________________________________________________________________________________
 
-- Testes Unitários
+- Inclusão de Testes Unitários
 - Utilizar versão mais recente do Spring e corrigir possíveis erros de dependências
