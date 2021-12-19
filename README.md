@@ -59,6 +59,7 @@ ________________________________________________________________________________
 - Endpoint de consulta de camisetas por tamanho
 
 ## Requisitos Funcionais
+_________________________________________________________________________________
 
 ### Cadastro de Produto
 
@@ -160,7 +161,8 @@ ________________________________________________________________________________
 - As consultas deverão ser paginadas de 15 em 15 registros e caso nenhum registro corresponda ao critério de busca
   deverá ser retornada uma lista vazia
 
-### Requisitos Não Funcionais
+## Requisitos Não Funcionais
+_________________________________________________________________________________
 
 - Linguagem de Programação
     - Java 11
@@ -173,7 +175,8 @@ ________________________________________________________________________________
 - Documentação API
     - OpenAPI
 
-### Evolução dos Requisitos Não Funcionais
+## Evolução dos Requisitos Não Funcionais
+_________________________________________________________________________________
 
 - Banco de Dados
     - Postgres
@@ -199,7 +202,7 @@ _Referência_
 - Docker
 - Heroku
 
-### Adicionais
+### Evoluções Adicionais
 
 - Auditoria Banco de Dados
 - Normalização dos dados
@@ -237,6 +240,7 @@ _Referência:_
 - https://github.com/liliannss/observabilidade
 
 ## Guia de Implementação
+_________________________________________________________________________________
 
 - Inicialização do projeto
     - https://start.spring.io/
@@ -252,7 +256,8 @@ _Referência:_
     - Repositories
         - Camada de manipulação de dados
 
-### Pontos abordados
+### Tecnologias Abordadas
+_________________________________________________________________________________
 
 ✅ **H2** http://localhost:8081/javagirls/h2-console
 
