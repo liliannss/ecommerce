@@ -7,7 +7,7 @@ O escopo do desafio é a implementação de um sistema e-commerce de acordo com 
 
 Também fica a critério de quem está implementando a escolha das tecnologias e arquitetura que serão utilizadas sendo importante ressaltar que as tecnologias apresentadas aqui são direcionadas ao Java e Spring Framework. 
 
-### É importante mencionar que neste projeto não estão sendo abordadas melhores práticas de desenvolvimento sendo recomendado o estudo detalhado dos tópicos abordados.
+### Neste projeto não estão sendo abordadas melhores práticas de desenvolvimento sendo recomendado o estudo detalhado dos tópicos abordados.
 
 ### Contextualização
 _________________________________________________________________________________
