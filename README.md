@@ -220,11 +220,11 @@ _Referências:_
 
 - Codecov
 
-## Testes Unitários
+### Testes Unitários
 
 - JUnit5
 
-## Observabilidade
+### Observabilidade
 
 - Prometheus
 - Grafana
