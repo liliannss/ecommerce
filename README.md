@@ -5,17 +5,17 @@ Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíve
 
 O escopo do desafio é a implementação de um sistema e-commerce de acordo com as regras definidas aqui, refinadas, corrigidas e ou evoluídas pela pessoa que está implementando.
 
-Também fica a critério de quem está implementando a escolha das tecnologias e arquitetura que serão utilizadas sendo importante ressaltar que o escopo apresentando aqui é direcionado ao Java e Spring Framework. 
+Também fica a critério de quem está implementando a escolha das tecnologias e arquitetura que serão utilizadas sendo importante ressaltar que as tecnologias apresentadas aqui são direcionadas ao Java e Spring Framework. 
 
 ### É importante mencionar que neste projeto não estão sendo abordadas melhores práticas de desenvolvimento sendo recomendado o estudo detalhado dos tópicos abordados.
 
 ### Contextualização
-
+_________________________________________________________________________________
 - Sistema de e-commerce responsável pelo cadastro de vestuário, venda online e entrega.
 
-_________________________________________________________________________________ 
 
 ### Qual tipo de vestuário?
+_________________________________________________________________________________
 
 https://pt.wikipedia.org/wiki/Categoria:Vestu%C3%A1rio
 
@@ -23,17 +23,15 @@ https://pt.wikipedia.org/wiki/Categoria:Vestu%C3%A1rio
 
 - Sistema de e-commerce responsável pelo cadastro de camisetas, venda online e entrega.
 
-_________________________________________________________________________________ 
-
 ### Qualquer pessoa pode comprar?
+_________________________________________________________________________________
 
 *Resposta: somente usuários cadastrados no sistema.*
 
 - Sistema de e-commerce responsável pelo cadastro de camisetas, venda online para usuários cadastrados e entrega.
 
-_________________________________________________________________________________ 
-
 ### Delimitação do Contexto
+_________________________________________________________________________________
 
 - Produto (camisetas)
 - Venda
@@ -41,6 +39,7 @@ ________________________________________________________________________________
 - Entrega
 
 ### Linguagem Onipresente (Ubíqua)
+_________________________________________________________________________________
 
 **Representação do Negócio**
 
