@@ -290,6 +290,8 @@ _Referência_
 ✅ **Swagger**
 - http://localhost:8081/javagirls/swagger-ui/index.html
 
+✅ **cURL**
+
 ✅ **Versionamento de API**
 - /v1/users
 
