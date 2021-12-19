@@ -255,11 +255,9 @@ _Referência:_
 ### Pontos abordados
 
 ✅ **H2**
-
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
 ✅ **ResponseEntity**
-
 - Retornando id do recurso criado no Location:
     - https://github.com/algaworks/workshop-rest-spring/blob/master/Adicionando%20o%20recurso%20Autor%20%C3%A0%20nossa%20API/src/main/java/com/algaworks/socialbooks/resources/LivrosResources.java
 
@@ -280,21 +278,17 @@ _Referência:_
 ✅ **ModelMapper**
 
 ✅ **Swagger**
-
 - http://localhost:8081/javagirls/swagger-ui/index.html
 
 ✅ **Versionamento de API**
-
 - /v1/users
 
 ✅ **Context Path**
-
 - server.servlet.context-path=/javagirls
 
 ✅ **Exception Handler**
 
 ✅ **Consultas**
-
 - Query Methods
 - JPQL
     - https://www.baeldung.com/spring-data-jpa-query
@@ -304,7 +298,6 @@ _Referência:_
 - Consulta paginada
 
 ✅ **Consumo de WebService**
-
 - Feign
 - WebClient
 - RestTemplate
@@ -313,11 +306,9 @@ _Referência:_
 ✅ **Variável de ambiente com Spring**
 
 ✅ **Arquivo data.sql**
-
 - A nomenclatura do arquivo deve ser data.sql
 
 ✅ **Flyway**
-
 - https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 - Boas Práticas:
     - V01__criar_e_registrar_categorias.sql
@@ -327,7 +318,6 @@ _Referência:_
     - Escrever o que a migração faz separando por um underscore.
 
 ✅ **Comandos Maven**
-
 - https://gist.github.com/erkobridee/3287943
 
 ✅ **Readme**
