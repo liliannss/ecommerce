@@ -24,7 +24,6 @@ public class CepServiceImpl {
     private final CepService service;
 
     public Address getCepWithFeign(String cep) {
-
         return service.findAddressByCep(cep);
     }
 
@@ -39,5 +38,4 @@ public class CepServiceImpl {
     public Address getCepWithRestTemplate(String cep) {
         return restTemplate.getForObject(uri, Address.class, Map.of("cep", cep));
     }
-
 }

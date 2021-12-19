@@ -1,16 +1,15 @@
 package br.com.devs.javagirl.user.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
-@Data
+@Getter
+@Setter
 @Builder
+@ToString
 @Embeddable
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,6 +19,7 @@ public class Address {
     @Column(name = "logradouro")
     private String street;
 
+    @JsonProperty(value = "numero")
     @Column(name = "numero")
     private String number;
 
@@ -30,5 +30,4 @@ public class Address {
     @JsonProperty(value = "localidade")
     @Column(name = "localidade")
     private String city;
-
 }

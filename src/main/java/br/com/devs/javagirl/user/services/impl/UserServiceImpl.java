@@ -25,21 +25,29 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserEntity createFeign(String cep, UserEntity userEntity) {
-        Address address = getAddress(cep);
-        userEntity.setAddress(address);
+        String number = getNumber(userEntity);
 
-        UserEntity userEntitySaved = repository.save(userEntity);
+        Address address = getAddress(cep);
+        buildEntity(userEntity, number, address);
+
+        UserEntity userEntitySaved = saveUser(userEntity);
 
         log.info("UserEntity saved={}", userEntitySaved);
         return userEntitySaved;
     }
 
+    private Address getAddress(String cep) {
+        return cepService.getCepWithFeign(cep);
+    }
+
     @Override
     public UserEntity createWebClient(String cep, UserEntity userEntity) {
-        Address address = cepService.getCepWithWebClient(cep);
-        userEntity.setAddress(address);
+        String number = getNumber(userEntity);
 
-        UserEntity userEntitySaved = repository.save(userEntity);
+        Address address = cepService.getCepWithWebClient(cep);
+        buildEntity(userEntity, number, address);
+
+        UserEntity userEntitySaved = saveUser(userEntity);
 
         log.info("UserEntity saved={}", userEntitySaved);
         return userEntitySaved;
@@ -47,20 +55,30 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserEntity createRestTemplate(String cep, UserEntity userEntity) {
-        Address address = cepService.getCepWithRestTemplate(cep);
-        userEntity.setAddress(address);
+        String number = getNumber(userEntity);
 
-        UserEntity userEntitySaved = repository.save(userEntity);
+        Address address = cepService.getCepWithRestTemplate(cep);
+        buildEntity(userEntity, number, address);
+
+        UserEntity userEntitySaved = saveUser(userEntity);
 
         log.info("UserEntity saved={}", userEntitySaved);
         return userEntitySaved;
     }
 
-    private Address getAddress(String cep) {
-        Address address = cepService.getCepWithFeign(cep);
+    private String getNumber(UserEntity userEntity) {
+        return userEntity
+                .getAddress()
+                .getNumber();
+    }
 
-        log.info("Address found={}", address);
-        return address;
+    private void buildEntity(UserEntity userEntity, String number, Address address) {
+        address.setNumber(number);
+        userEntity.setAddress(address);
+    }
+
+    private UserEntity saveUser(UserEntity userEntity) {
+        return repository.save(userEntity);
     }
 
     @Override
@@ -74,31 +92,33 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserEntity> findByNameAndEmailQueryMethods(String name, String email) {
-        List<UserEntity> userEntity = repository.findByNameContainingOrEmailContainingAllIgnoreCase(name, email);
+        List<UserEntity> userEntityList = repository.findByNameContainingOrEmailContainingAllIgnoreCase(name, email);
 
-        log.info("UserEntity found={}", userEntity);
-        return userEntity;
+        log.info("UserEntity found={}", userEntityList);
+        return userEntityList;
     }
 
     @Override
     public List<UserEntity> findByNameAndEmailJPQL(String name, String email) {
-        List<UserEntity> userEntity = repository.findByNameContainingOrEmailContainingAllIgnoreCaseJPQL(name, email);
+        List<UserEntity> userEntityList = repository.findByNameContainingOrEmailContainingAllIgnoreCaseJPQL(name, email);
 
-        log.info("UserEntity found={}", userEntity);
-        return userEntity;
+        log.info("UserEntity found={}", userEntityList);
+        return userEntityList;
     }
 
     @Override
     public List<UserEntity> findByNameAndEmailNativeQuery(String name, String email) {
-        List<UserEntity> userEntity = repository.findByNameContainingOrEmailContainingAllIgnoreCaseNativeQuery(name, email);
+        List<UserEntity> userEntityList = repository.findByNameContainingOrEmailContainingAllIgnoreCaseNativeQuery(name, email);
 
-        log.info("UserEntity found={}", userEntity);
-        return userEntity;
+        log.info("UserEntity found={}", userEntityList);
+        return userEntityList;
     }
 
     @Override
     public Page<UserEntity> findByNameAndEmailPaginated(Pageable pageable) {
-        return repository.findAll(pageable);
-    }
+        Page<UserEntity> userEntityPage = repository.findAll(pageable);
 
+        log.info("UserEntity found={}", userEntityPage);
+        return userEntityPage;
+    }
 }

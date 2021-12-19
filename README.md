@@ -1,9 +1,18 @@
 ![](images/logo.jpg)
-# E-COMMERCE Devs Java Girl
 
-### Contexto geral (problema)
+# E-Commerce Devs Java Girl 💁
+Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente que irão auxiliar em partes na construção do desafio proposto.
+
+O escopo do desafio é a implementação de um sistema e-commerce de acordo com as regras definidas aqui, refinadas, corrigidas e ou evoluídas pela pessoa que está implementando.
+
+Também fica a critério de quem está implementando a escolha de tecnologias e arquitetura.
+
+**É importante mencionar que neste projeto não estão sendo abordadas melhores práticas de desenvolvimento sendo recomendado o estudo detalhado dos tópicos abordados.**
+
+### Contextualização
 
 - Sistema de e-commerce responsável pelo cadastro de vestuário, venda online e entrega.
+
 _________________________________________________________________________________ 
 
 ### Qual tipo de vestuário?
@@ -13,6 +22,7 @@ https://pt.wikipedia.org/wiki/Categoria:Vestu%C3%A1rio
 *Resposta: camisetas.*
 
 - Sistema de e-commerce responsável pelo cadastro de camisetas, venda online e entrega.
+
 _________________________________________________________________________________ 
 
 ### Qualquer pessoa pode comprar?
@@ -20,6 +30,7 @@ ________________________________________________________________________________
 *Resposta: somente usuários cadastrados no sistema.*
 
 - Sistema de e-commerce responsável pelo cadastro de camisetas, venda online para usuários cadastrados e entrega.
+
 _________________________________________________________________________________ 
 
 ### Delimitação do Contexto
@@ -29,9 +40,10 @@ ________________________________________________________________________________
 - Usuários
 - Entrega
 
-### Linguagem Onipresente (Ubíqua) - Exemplo
+### Linguagem Onipresente (Ubíqua)
 
 **Representação do Negócio**
+
 - O sistema deverá suportar as operações de cadastro, consulta, atualização e remoção de camisetas
 - Será possível realizar a consulta de camisetas por modelo
 - Será possível realizar a consulta camisetas por valor
@@ -39,6 +51,7 @@ ________________________________________________________________________________
 - Será possível realizar a consulta camisetas por tamanho
 
 **Representação Técnica**
+
 - CRUD (Create, Read, Update e Delete) de venda de camisetas
 - Endpoint de consulta de camisetas por modelo
 - Endpoint de consulta de camisetas por valor
@@ -46,52 +59,61 @@ ________________________________________________________________________________
 - Endpoint de consulta de camisetas por tamanho
 
 ## Requisitos Funcionais
+
 ### Cadastro de Produto
+
 - Para cadastro de um produto deverá obrigatoriamente ser informado:
     - Nome do modelo
     - Valor
     - Cores disponíveis
     - Modelagem
-      - Masculina Gola Olímpica
-      - Feminina Gola U
-      - Feminina Gola Olímpica
+        - Masculina Gola Olímpica
+        - Feminina Gola U
+        - Feminina Gola Olímpica
     - Tamanhos disponíveis
-      - P
-      - M
-      - G
-      - GG
-      - 2GG
-      - 3GG
-      - 4GG
+        - P
+        - M
+        - G
+        - GG
+        - 2GG
+        - 3GG
+        - 4GG
     - Informações Sobre o produto (campo livre)
     - Total disponível no estoque
 
 **Validações**
+
 - Não será possível o cadastro de mais de um modelo com o mesmo nome
 - O padrão monetário adotado será o REAL (duas casas decimais separadas por vírgula)
 - Não será possível o cadastro de mais de uma cor com o mesmo nome
 - O total em estoque não deverá ultrapassar 100 unidades por modelo
 
 **Critério de Aceite**
+
 - O produto deverá ser inserido no Banco de Dados de acordo com as regras de validações
 
 ### Cadastro de Venda
+
 - Para cadastro de uma venda obrigatoriamente deverá ser informado:
     - Código do cliente
     - Código do produto
     - Quantidade de unidades a serem compradas
 
 **Validações**
+
 - A quantidade vendida não poderá ultrapassar o total de 10 unidades por cliente
 
 **Critério de Aceite**
+
 - A venda deverá ser inserida no Banco de Dados de acordo com as regras de validações
 
 **Bônus**
+
 - Adicionar campo livre para avaliação das compras realizadas por determinado cliente
 - O campo deverá constar na listagem dos produtos
 
 ### Cadastro de Usuário
+
 - Para cadastro de um usuário deverá obrigatoriamente ser informado:
     - Nome completo
     - Data de nascimento
@@ -103,48 +125,58 @@ ________________________________________________________________________________
     - Endereço
 
 **Validações**
+
 - Não será permitido o cadastro de um usuário menor de 18 anos
 - RG e CPF devem ser números válidos e únicos por usuário
 - O E-mail informado deverá ser válido e único por usuário
 - O CEP do endereço deverá ser informado obrigatoriamente
 
 **Critério de Aceite**
+
 - O usuário deverá ser inserido no Banco de Dados de acordo com as regras de validações
 
 ### Consulta de Usuário
+
 - Consulta por nome
 - Consulta por e-mail
 - Consulta por endereço
 
 **Validações**
+
 - Requisito Funcional Geral - RFG1 (vide abaixo)
 
 ### Cadastro de Entrega
+
 - Para cadastro de uma entrega deverá obrigatoriamente ser informado:
     - Código da venda
 
 **Critério de Aceite**
+
 - Deverá ser informado ao usuário o valor do frete e prazo de entrega
 - Requisito Funcional Geral - RFG1 (vide abaixo)
 
 ### Requisito Funcional Geral - RFG1
-- As consultas deverão ser paginadas de 15 em 15 registros e caso nenhum registro corresponda ao critério de busca deverá ser retornada uma lista vazia
+
+- As consultas deverão ser paginadas de 15 em 15 registros e caso nenhum registro corresponda ao critério de busca
+  deverá ser retornada uma lista vazia
 
 ### Requisitos Não Funcionais
+
 - Linguagem de Programação
-  - Java 11
+    - Java 11
 - Gerenciador de dependências
-  - Maven
+    - Maven
 - Framework
-  - Spring
+    - Spring
 - Banco de Dados
-  - H2
+    - H2
 - Documentação API
-  - OpenAPI
+    - OpenAPI
 
 ### Evolução dos Requisitos Não Funcionais
+
 - Banco de Dados
-  - Postgres
+    - Postgres
 - Spring Cloud
     - Ribbon
     - Resilience4J
@@ -153,6 +185,7 @@ ________________________________________________________________________________
     - Config Server
 
 _Referência_
+
 - https://www.udemy.com/course/microsservicos-java-spring-cloud
 
 
@@ -162,30 +195,37 @@ _Referência_
     - Keycloak
 
 ### Disponibilização da Aplicação
+
 - Docker
 - Heroku
 
 ### Adicionais
+
 - Auditoria Banco de Dados
 - Normalização dos dados
 - Consulta com filtros utilizando Specification ou QueryDSL
 - Liquibase como controle de versão da Base de Dados
 
 ### CI/CD
+
 - Travis CI ou GitHub Actions
 
 _Referências:_
+
 - https://medium.com/codigorefinado/code-review-revis%C3%A3o-de-c%C3%B3digo-pode-ser-automatizada-ba5f25882774
 - https://medium.com/thiagobarradas/an%C3%A1lise-cont%C3%ADnua-de-qualidade-do-software-bb7b03518bcc
 - https://imasters.com.br/cloud/spring-boot-na-nuvem-de-graca-e-com-as-melhores-praticas
 
 ### Cobertura de Código
+
 - Codecov
 
 ## Testes Unitários
+
 - JUnit5
 
 ## Observabilidade
+
 - Prometheus
 - Grafana
 - Loki
@@ -193,9 +233,11 @@ _Referências:_
 - ELK
 
 _Referência:_
+
 - https://github.com/liliannss/observabilidade
 
 ## Guia de Implementação
+
 - Inicialização do projeto
     - https://start.spring.io/
 
@@ -213,9 +255,11 @@ _Referência:_
 ### Pontos abordados
 
 ✅ **H2**
+
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
 ✅ **ResponseEntity**
+
 - Retornando id do recurso criado no Location:
     - https://github.com/algaworks/workshop-rest-spring/blob/master/Adicionando%20o%20recurso%20Autor%20%C3%A0%20nossa%20API/src/main/java/com/algaworks/socialbooks/resources/LivrosResources.java
 
@@ -236,26 +280,31 @@ _Referência:_
 ✅ **ModelMapper**
 
 ✅ **Swagger**
+
 - http://localhost:8081/javagirls/swagger-ui/index.html
 
 ✅ **Versionamento de API**
+
 - /v1/users
 
 ✅ **Context Path**
+
 - server.servlet.context-path=/javagirls
 
 ✅ **Exception Handler**
 
 ✅ **Consultas**
+
 - Query Methods
 - JPQL
     - https://www.baeldung.com/spring-data-jpa-query
-https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-using-query-annotation.html
+      https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-using-query-annotation.html
 - Query Nativa
     - http://www.h2database.com/html/functions.html#lower
 - Consulta paginada
 
 ✅ **Consumo de WebService**
+
 - Feign
 - WebClient
 - RestTemplate
@@ -264,9 +313,11 @@ https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-usi
 ✅ **Variável de ambiente com Spring**
 
 ✅ **Arquivo data.sql**
+
 - A nomenclatura do arquivo deve ser data.sql
 
 ✅ **Flyway**
+
 - https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 - Boas Práticas:
     - V01__criar_e_registrar_categorias.sql
@@ -276,10 +327,16 @@ https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-usi
     - Escrever o que a migração faz separando por um underscore.
 
 ✅ **Comandos Maven**
+
 - https://gist.github.com/erkobridee/3287943
 
 ✅ **Readme**
 
+✅ **Mocks**
+- https://www.4devs.com.br/
+- https://www.mockaroo.com/
+
 ### Pontos de Melhoria
+
 - Testes Unitários
-- Utilizar versão mais atual do Spring com Spring Cloud para uso do Feign
+- Utilizar versão mais atual do Spring e corrigir possíveis erros de dependências

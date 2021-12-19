@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class UserRequestDTO {
 
-    @Schema(example = "TESTE")
+    @Schema(example = "Teste")
     @NotBlank(message = "Name required")
     @JsonProperty(value = "nome")
     private String name;
@@ -25,18 +25,18 @@ public class UserRequestDTO {
     @JsonProperty(value = "nascimento")
     private LocalDate birthdate;
 
-    @Schema(example = "1111111111")
+    @Schema(example = "237253847")
     private String rg;
 
     @CPF
-    @Schema(example = "29583329002")
+    @Schema(example = "45028438064")
     private String cpf;
 
-    @Schema(example = "1111111111")
+    @Schema(example = "324-763-1348")
     @JsonProperty(value = "telefone")
     private String phone;
 
-    @Schema(example = "1111111111")
+    @Schema(example = "251-269-0832")
     @JsonProperty(value = "celular")
     private String cellPhone;
 
@@ -44,6 +44,7 @@ public class UserRequestDTO {
     @Schema(example = "test@test")
     private String email;
 
+    @Schema(example = "111")
     @JsonProperty(value = "numero")
     private String number;
 }

@@ -1,1 +1,1 @@
-UPDATE usuario SET nome = 'TESTE' WHERE nome = 'TEST'
+UPDATE usuario SET nome = 'Ed' WHERE nome = 'Job'

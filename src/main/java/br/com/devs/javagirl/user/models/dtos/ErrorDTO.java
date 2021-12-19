@@ -12,14 +12,9 @@ import java.util.List;
 public class ErrorDTO {
 
     private HttpStatus status;
-
     private String path;
-
     private String method;
-
     private List<String> message;
-
     private String errorId;
-
     private Date instantCreated;
 }

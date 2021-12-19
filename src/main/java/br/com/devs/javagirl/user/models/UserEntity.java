@@ -1,18 +1,17 @@
 package br.com.devs.javagirl.user.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-@Builder
 @Entity
-@Data
+@Getter
+@Setter
+@Builder
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "usuario")
@@ -43,5 +42,4 @@ public class UserEntity {
 
     @Column(name = "endereco")
     private Address address;
-
 }
