@@ -17,10 +17,13 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
+import java.net.URI;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
@@ -76,8 +79,8 @@ public class UserController {
             @ApiResponse(description = "Bad Request", responseCode = "400",
                     content = @Content(schema = @Schema(implementation = ErrorDTO.class)))
     })
-    public UserResponseDTO createWebClient(@PathVariable String cep,
-                                           @Valid @RequestBody UserRequestDTO userRequestDTO) {
+    public ResponseEntity<UserResponseDTO> createWebClient(@PathVariable @Schema(example = "17800970") String cep,
+                                                           @Valid @RequestBody UserRequestDTO userRequestDTO) {
         log.info("Start method createWebClient={}", userRequestDTO);
         UserEntity userEntity = converterDTO_ToEntity(userRequestDTO);
 
@@ -85,10 +88,16 @@ public class UserController {
 
         UserEntity userCreated = service.createWebClient(cep, userEntity);
 
+        URI uri = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(userCreated.getId())
+                .toUri();
+
         UserResponseDTO userDtoResponse = mapper.map(userCreated, UserResponseDTO.class);
         log.info("Finish method createWebClient={}", userDtoResponse);
 
-        return userDtoResponse;
+        return ResponseEntity.created(uri).body(userDtoResponse);
     }
 
     @Hidden

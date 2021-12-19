@@ -261,9 +261,7 @@ _Referência_
 
 ✅ **ResponseEntity**
 
-_Referência_
-- Retornando id do recurso criado no Location:
-    - https://github.com/algaworks/workshop-rest-spring/blob/master/Adicionando%20o%20recurso%20Autor%20%C3%A0%20nossa%20API/src/main/java/com/algaworks/socialbooks/resources/LivrosResources.java
+✅ **Postman**
 
 ✅ **Logs**
 
