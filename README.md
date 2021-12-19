@@ -263,7 +263,8 @@ ________________________________________________________________________________
 
 ✅ **Spring**
 
-✅ **H2** http://localhost:8081/javagirls/h2-console
+✅ **H2**
+- http://localhost:8081/javagirls/h2-console
 
 _Referência_
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
@@ -282,13 +283,12 @@ _Referência_
 
 ✅ **Validações com Spring**
 
-✅ **Mapper**
+✅ **Mappers**
 
 ✅ **Lombok**
 
-✅ **ModelMapper**
-
-✅ **Swagger** http://localhost:8081/javagirls/swagger-ui/index.html
+✅ **Swagger**
+- http://localhost:8081/javagirls/swagger-ui/index.html
 
 ✅ **Versionamento de API**
 - /v1/users
