@@ -1,11 +1,11 @@
 ![](images/logo.jpg)
 
 # E-Commerce Devs Java Girl 💁
-Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente que irão auxiliar em partes na construção do desafio proposto.
+Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliar em partes na construção do desafio proposto.
 
 O escopo do desafio é a implementação de um sistema e-commerce de acordo com as regras definidas aqui, refinadas, corrigidas e ou evoluídas pela pessoa que está implementando.
 
-Também fica a critério de quem está implementando a escolha de tecnologias e arquitetura.
+Também fica a critério de quem está implementando a escolha das tecnologias e arquitetura que serão utilizadas sendo importante ressaltar que o escopo apresentando aqui é direcionado ao Java e Spring Framework. 
 
 **É importante mencionar que neste projeto não estão sendo abordadas melhores práticas de desenvolvimento sendo recomendado o estudo detalhado dos tópicos abordados.**
 
