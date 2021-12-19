@@ -257,14 +257,20 @@ ________________________________________________________________________________
 ## Tecnologias e Conceitos Abordados
 _________________________________________________________________________________
 
+✅ **API**
+
+✅ **Rest**
+
+✅ **Spring**
+
 ✅ **H2** http://localhost:8081/javagirls/h2-console
 
 _Referência_
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
-✅ **ResponseEntity**
-
 ✅ **Postman**
+
+✅ **Collections**
 
 ✅ **Logs**
 
@@ -311,7 +317,7 @@ _Referências_
 _Referência_
 - https://dev.to/daienelima/como-consumir-uma-api-na-sua-aplicacao-spring-boot-3p3a
 
-✅ **Variável de ambiente com Spring**
+✅ **Variáveis com Spring**
 
 ✅ **Arquivo data.sql**
 - A nomenclatura do arquivo deve ser data.sql
@@ -327,7 +333,7 @@ _Referência_
 _Referência_
 - https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 
-✅ **Comandos Maven**
+✅ **Maven**
 
 _Referência_
 - https://gist.github.com/erkobridee/3287943
@@ -338,7 +344,6 @@ _Referência_
 
 _Referências_
 - https://www.4devs.com.br/
-- https://www.mockaroo.com/
 
 ## Melhorias
 _________________________________________________________________________________
