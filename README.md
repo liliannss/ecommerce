@@ -1,8 +1,10 @@
 # Projeto criado para fins de estudo
 
+Este projeto tem como objetivo oferecer um desafio e abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliá-los na implementação.
+
 ## E-Commerce 🚚
 
-Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliar em partes na construção do desafio proposto.
+
 
 ## Desafio Proposto 🕹
 O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
