@@ -279,11 +279,11 @@ ________________________________________________________________________________
 
 ✅ **Spring Framework**
 
-    ✅ **Arquivo application.properties**
-    ✅ **ResponseStatus x ResponseEntity**
-    ✅ **Validações com Spring**
-    ✅ **Anotações Jackson**
-    ✅ **Variáveis com Spring**
+    - Arquivo application.properties
+    - ResponseStatus x ResponseEntity
+    - Validações com Spring
+    - Anotações Jackson
+    - Variáveis com Spring
 
 ✅ **H2**
 - http://localhost:8081/javagirls/h2-console
