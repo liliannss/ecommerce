@@ -1,8 +1,6 @@
-![](images/logo.jpg)
+# Projeto criado para fins de estudo
 
-### Projeto criado no decorrer dos encontros do Grupo de Estudos no período de SET / DEZ de 2021.
-
-# E-Commerce Devs Java Girl 💁
+## E-Commerce 🚚
 
 Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliar em partes na construção do desafio proposto.
 
@@ -13,7 +11,7 @@ Também fica a critério a escolha das tecnologias e arquitetura que serão util
 
 As tecnologias apresentadas aqui estão direcionadas ao contexto **Java** e **Spring Framework**. 
 
-### Neste projeto não estão sendo abordadas melhores práticas de desenvolvimento ou tecnologias sendo recomendado o estudo aprofundado dos tópicos abordados.
+### Não estão sendo abordadas melhores práticas de desenvolvimento ou tecnologias sendo recomendado o estudo aprofundado dos tópicos abordados.
 
 ## Contextualização do Projeto 📚
 _________________________________________________________________________________
