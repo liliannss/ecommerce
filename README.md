@@ -159,6 +159,7 @@ ________________________________________________________________________________
 **Critério de Aceite**
 
 - Deverá ser informado ao usuário o valor do frete e prazo de entrega
+- A entrega deverá ser inserida no Banco de Dados
 
 ### 📁 Requisito Funcional Geral - RFG1
 
