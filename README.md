@@ -1,6 +1,6 @@
 ![](images/logo.jpg)
 
-**Projeto criado no decorrer dos encontros do Grupo de Estudos idealizado e mantido por [Lilian Sousa](https://www.linkedin.com/in/lilian-sousa/) e [Bruna Iriz](https://www.linkedin.com/in/bruna-iriz-vieira-ti/) no perído de Set/Dez de 2021.**
+## Projeto criado no decorrer dos encontros do Grupo de Estudos idealizado e mantido por [Lilian Sousa](https://www.linkedin.com/in/lilian-sousa/) e [Bruna Iriz](https://www.linkedin.com/in/bruna-iriz-vieira-ti/) no perído de SET / DEZ de 2021.
 
 # E-Commerce Devs Java Girl 💁
 
