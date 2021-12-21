@@ -8,7 +8,7 @@
         <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>br.com.devs.javagirl</groupId>
+    <groupId>br.com.ecommerce.user</groupId>
     <artifactId>user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>user</name>

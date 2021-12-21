@@ -1,4 +1,4 @@
-package br.com.devs.javagirl.user.models.dtos;
+package br.com.ecommerce.user.models.dtos;
 
 import lombok.Builder;
 import lombok.Data;

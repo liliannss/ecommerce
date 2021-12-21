@@ -1,4 +1,4 @@
-package br.com.devs.javagirl.user.configurations;
+package br.com.ecommerce.user.configurations;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Contact;
@@ -9,7 +9,7 @@ import org.springdoc.webmvc.ui.SwaggerConfig;
         info = @Info(
                 title = "Cadastro de Usuários",
                 description = "API para Cadastro de Usuários",
-                contact = @Contact(url = "https://www.linkedin.com/in/devsjavagirlbr/?originalSubdomain=br", name = "Devs Java Girl")))
+                contact = @Contact(url = "XXX", name = "XXX")))
 public class SwaggerConfiguration extends SwaggerConfig {
 
 }

@@ -1,11 +1,11 @@
-package br.com.devs.javagirl.user.controllers;
+package br.com.ecommerce.user.controllers;
 
-import br.com.devs.javagirl.user.models.Address;
-import br.com.devs.javagirl.user.models.UserEntity;
-import br.com.devs.javagirl.user.models.dtos.ErrorDTO;
-import br.com.devs.javagirl.user.models.dtos.UserRequestDTO;
-import br.com.devs.javagirl.user.models.dtos.UserResponseDTO;
-import br.com.devs.javagirl.user.services.UserService;
+import br.com.ecommerce.user.models.Address;
+import br.com.ecommerce.user.models.UserEntity;
+import br.com.ecommerce.user.models.dtos.ErrorDTO;
+import br.com.ecommerce.user.models.dtos.UserRequestDTO;
+import br.com.ecommerce.user.models.dtos.UserResponseDTO;
+import br.com.ecommerce.user.services.UserService;
 import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;

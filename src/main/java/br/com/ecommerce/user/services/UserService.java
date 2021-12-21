@@ -1,6 +1,6 @@
-package br.com.devs.javagirl.user.services;
+package br.com.ecommerce.user.services;
 
-import br.com.devs.javagirl.user.models.UserEntity;
+import br.com.ecommerce.user.models.UserEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

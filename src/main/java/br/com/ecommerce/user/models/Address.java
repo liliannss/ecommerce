@@ -1,4 +1,4 @@
-package br.com.devs.javagirl.user.models;
+package br.com.ecommerce.user.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

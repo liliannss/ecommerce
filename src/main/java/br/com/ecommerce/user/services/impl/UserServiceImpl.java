@@ -1,9 +1,9 @@
-package br.com.devs.javagirl.user.services.impl;
+package br.com.ecommerce.user.services.impl;
 
-import br.com.devs.javagirl.user.models.Address;
-import br.com.devs.javagirl.user.models.UserEntity;
-import br.com.devs.javagirl.user.repositories.UserRepository;
-import br.com.devs.javagirl.user.services.UserService;
+import br.com.ecommerce.user.models.Address;
+import br.com.ecommerce.user.models.UserEntity;
+import br.com.ecommerce.user.repositories.UserRepository;
+import br.com.ecommerce.user.services.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Page;

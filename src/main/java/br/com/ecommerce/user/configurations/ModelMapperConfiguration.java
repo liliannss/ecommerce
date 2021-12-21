@@ -1,4 +1,4 @@
-package br.com.devs.javagirl.user.configurations;
+package br.com.ecommerce.user.configurations;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

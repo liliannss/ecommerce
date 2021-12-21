@@ -1,7 +1,7 @@
-package br.com.devs.javagirl.user.services.impl;
+package br.com.ecommerce.user.services.impl;
 
-import br.com.devs.javagirl.user.models.Address;
-import br.com.devs.javagirl.user.services.CepService;
+import br.com.ecommerce.user.models.Address;
+import br.com.ecommerce.user.services.CepService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

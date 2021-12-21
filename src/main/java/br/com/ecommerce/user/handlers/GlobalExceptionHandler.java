@@ -1,6 +1,6 @@
-package br.com.devs.javagirl.user.handlers;
+package br.com.ecommerce.user.handlers;
 
-import br.com.devs.javagirl.user.models.dtos.ErrorDTO;
+import br.com.ecommerce.user.models.dtos.ErrorDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

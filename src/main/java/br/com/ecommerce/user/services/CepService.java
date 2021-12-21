@@ -1,6 +1,6 @@
-package br.com.devs.javagirl.user.services;
+package br.com.ecommerce.user.services;
 
-import br.com.devs.javagirl.user.models.Address;
+import br.com.ecommerce.user.models.Address;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;

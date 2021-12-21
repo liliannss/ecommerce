@@ -1,26 +1,29 @@
 # Projeto criado para fins de estudo
 
-Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo oferecer um desafio e abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliá-los na implementação.
+Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo oferecer um desafio e abordar alguns
+conceitos e tecnologias disponíveis que eventualmente irão auxiliá-los na implementação.
 
 ## E-Commerce 🚚
 
-
-
 ## Desafio Proposto 🕹
-O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
+
+O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que
+deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
 
 Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
 
-As tecnologias apresentadas aqui estão direcionadas ao contexto **Java** e **Spring Framework**. 
+As tecnologias apresentadas aqui estão direcionadas ao contexto **Java** e **Spring Framework**.
 
 ### Não estão sendo abordadas melhores práticas de desenvolvimento ou tecnologias sendo recomendado o estudo aprofundado dos tópicos abordados.
 
 ## Contextualização do Projeto 📚
+
 _________________________________________________________________________________
+
 - Sistema de e-commerce responsável pelo cadastro de vestuário, venda online e entrega.
 
-
 ### 🔎 Qual tipo de vestuário?
+
 _________________________________________________________________________________
 
 https://pt.wikipedia.org/wiki/Categoria:Vestu%C3%A1rio
@@ -30,6 +33,7 @@ https://pt.wikipedia.org/wiki/Categoria:Vestu%C3%A1rio
 - Sistema de e-commerce responsável pelo cadastro de camisetas, venda online e entrega.
 
 ### 🔎 Qualquer pessoa pode comprar?
+
 _________________________________________________________________________________
 
 *Resposta: somente usuários cadastrados no sistema.*
@@ -37,6 +41,7 @@ ________________________________________________________________________________
 - Sistema de e-commerce responsável pelo cadastro de camisetas, venda online para usuários cadastrados e entrega.
 
 ### 🔎 Delimitação do Contexto
+
 _________________________________________________________________________________
 
 - Produto (camisetas)
@@ -45,6 +50,7 @@ ________________________________________________________________________________
 - Entrega
 
 ### 🔎 Linguagem Onipresente x Técnico
+
 _________________________________________________________________________________
 
 **Representação do Negócio**
@@ -64,6 +70,7 @@ ________________________________________________________________________________
 - Endpoint de consulta de camisetas por tamanho
 
 ## 📁 Requisitos Funcionais
+
 _________________________________________________________________________________
 
 ### 💻 Cadastro de Produto
@@ -167,6 +174,7 @@ ________________________________________________________________________________
   deverá ser retornada uma lista vazia
 
 ## 📁 Requisitos Não Funcionais
+
 _________________________________________________________________________________
 
 - Linguagem de Programação
@@ -181,6 +189,7 @@ ________________________________________________________________________________
     - OpenAPI
 
 ## 💡 Evolução dos Requisitos Não Funcionais
+
 _________________________________________________________________________________
 
 Sugestão de evolução:
@@ -195,6 +204,7 @@ Sugestão de evolução:
     - Config Server
 
 _Referência_
+
 - https://www.udemy.com/course/microsservicos-java-spring-cloud
 
 
@@ -220,6 +230,7 @@ _Referência_
 - Travis CI ou GitHub Actions
 
 _Referências complementares:_
+
 - https://medium.com/codigorefinado/code-review-revis%C3%A3o-de-c%C3%B3digo-pode-ser-automatizada-ba5f25882774
 - https://medium.com/thiagobarradas/an%C3%A1lise-cont%C3%ADnua-de-qualidade-do-software-bb7b03518bcc
 - https://imasters.com.br/cloud/spring-boot-na-nuvem-de-graca-e-com-as-melhores-praticas
@@ -241,9 +252,11 @@ _Referências complementares:_
 - ELK
 
 _Referência:_
+
 - https://github.com/liliannss/observabilidade
 
 ## 💡 Guia Inicial de Implementação
+
 _________________________________________________________________________________
 
 - Inicialização do projeto
@@ -278,6 +291,7 @@ ________________________________________________________________________________
 ## 💾 Tecnologias
 
 ✅ **Spring Framework**
+
 - Arquivo application.properties
 - ResponseStatus x ResponseEntity
 - Validações com Spring
@@ -285,9 +299,11 @@ ________________________________________________________________________________
 - Variáveis com Spring
 
 ✅ **H2**
-- http://localhost:8081/javagirls/h2-console
+
+- http://localhost:8081/ecommerce/h2-console
 
 _Referência_
+
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
 ✅ **Collections**
@@ -303,39 +319,48 @@ _Referência_
 ✅ **Lombok**
 
 ✅ **Swagger**
-- http://localhost:8081/javagirls/swagger-ui/index.html
+
+- http://localhost:8081/ecommerce/swagger-ui/index.html
 
 ✅ **Versionamento de API**
+
 - /v1/users
 
 ✅ **Context Path**
-- /javagirls
+
+- /ecommerce
 
 ✅ **Exception Handler**
 
 ✅ **Consultas**
+
 - Query Methods
 - JPQL
 - Query Nativa
 - Consulta paginada
 
 _Referências_
+
 - https://www.baeldung.com/spring-data-jpa-query
 - https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-using-query-annotation.html
 - http://www.h2database.com/html/functions.html#lower
 
 ✅ **Consumo de WebService**
+
 - Feign
 - WebClient
 - RestTemplate
 
 _Referência_
+
 - https://dev.to/daienelima/como-consumir-uma-api-na-sua-aplicacao-spring-boot-3p3a
 
 ✅ **Arquivo data.sql**
+
 - A nomenclatura do arquivo deve ser data.sql
 
 ✅ **Flyway**
+
 - Boas Práticas:
     - V01__criar_e_registrar_categorias.sql
     - Iniciar com V maiúsculo;
@@ -344,11 +369,13 @@ _Referência_
     - Escrever o que a migração faz separando por um underscore.
 
 _Referência_
+
 - https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 
 ✅ **Maven**
 
 _Referência_
+
 - https://gist.github.com/erkobridee/3287943
 
 ✅ **Readme**
@@ -356,6 +383,7 @@ _Referência_
 ✅ **Mocks**
 
 _Referências_
+
 - https://www.4devs.com.br/
 
 ## 💾 Ferramentas
@@ -371,6 +399,7 @@ _Referências_
 ✅ **Postman**
 
 ## 🔨 Melhorias
+
 _________________________________________________________________________________
 
 Sugestão de melhorias:
