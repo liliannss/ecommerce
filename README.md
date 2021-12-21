@@ -260,10 +260,19 @@ ________________________________________________________________________________
     - Repositories
         - Camada de manipulação de dados
 
-## 💾 Tecnologias
+## Fundamentos - Tecnologias - Ferramentas
+
+Fundamentos, Tecnologias e Ferramentas abordados no decorrer do grupo de estudos e recomendados para estudo.
 _________________________________________________________________________________
 
-Tecnologias abordadas:
+## 💾 Fundamentos
+
+✅ **Java**
+
+✅ **Programação Orientada a Objetos**
+
+
+## 💾 Tecnologias
 
 ✅ **API**
 
@@ -274,6 +283,10 @@ Tecnologias abordadas:
 ✅ **H2**
 - http://localhost:8081/javagirls/h2-console
 
+✅ **Arquivo application.properties**
+
+✅ **ResponseStatus x ResponseEntity**
+
 _Referência_
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
@@ -281,9 +294,7 @@ _Referência_
 
 ✅ **Logs**
 
-✅ **Enums**
-
-✅ **Classes Embedadas**
+✅ **Classe Embeddable**
 
 ✅ **DTO (Data Transfer Object)**
 
@@ -292,6 +303,8 @@ _Referência_
 ✅ **ModelMapper**
 
 ✅ **Lombok**
+
+✅ **Anotações Jackson**
 
 ✅ **Swagger**
 - http://localhost:8081/javagirls/swagger-ui/index.html
@@ -353,9 +366,9 @@ _Referências_
 
 ## 💾 Ferramentas
 
-Ferramentas utilizadas no decorrer da implementação:
+✅ **IntelliJ**
 
-✅ **IDE**
+✅ **Git**
 
 ✅ **GitHub**
 
