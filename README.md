@@ -14,7 +14,7 @@ Também fica a critério a escolha das tecnologias e arquitetura que serão util
 
 As tecnologias apresentadas aqui estão direcionadas ao contexto **Java** e **Spring Framework**.
 
-### Não estão sendo abordadas melhores práticas de desenvolvimento ou tecnologias sendo recomendado o estudo aprofundado dos tópicos abordados.
+### Não estão sendo abordadas melhores práticas de desenvolvimento ou o aprofundamento das tecnologias sendo recomendado o estudo e prática dos tópicos abordados.
 
 ## Contextualização do Projeto 📚
 
