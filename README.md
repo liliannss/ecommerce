@@ -250,7 +250,7 @@ ________________________________________________________________________________
     - https://start.spring.io/
 
 
-- Estrutura de pacotes
+- Estrutura básica de pacotes
     - Controllers
         - Requisições (entrada / saída de dados)
     - Models
