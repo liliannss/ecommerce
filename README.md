@@ -271,12 +271,11 @@ ________________________________________________________________________________
 
 ✅ **Programação Orientada a Objetos**
 
-
-## 💾 Tecnologias
-
 ✅ **API**
 
 ✅ **Rest**
+
+## 💾 Tecnologias
 
 ✅ **Spring Framework**
 
