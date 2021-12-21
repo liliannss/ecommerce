@@ -262,7 +262,7 @@ ________________________________________________________________________________
 
 ## Fundamentos - Tecnologias - Ferramentas
 
-Fundamentos, Tecnologias e Ferramentas abordados no decorrer do grupo de estudos e recomendados para estudo.
+Fundamentos, Tecnologias e Ferramentas abordados no decorrer dos encontros e recomendados para estudo.
 _________________________________________________________________________________
 
 ## 💾 Fundamentos
