@@ -1,23 +1,19 @@
 ![](images/logo.jpg)
 
-**SET / DEZ - 2021**
-
-**Projeto criado no decorrer dos encontros do Grupo de Estudos idealizado e mantido por [Lilian Sousa](https://www.linkedin.com/in/lilian-sousa/) e [Bruna Iriz](https://www.linkedin.com/in/bruna-iriz-vieira-ti/)**
+**Projeto criado no decorrer dos encontros do Grupo de Estudos idealizado e mantido por [Lilian Sousa](https://www.linkedin.com/in/lilian-sousa/) e [Bruna Iriz](https://www.linkedin.com/in/bruna-iriz-vieira-ti/) no perído de Set/Dez de 2021.**
 
 # E-Commerce Devs Java Girl 💁
 
 Este projeto tem como objetivo abordar alguns conceitos e tecnologias disponíveis que eventualmente irão auxiliar em partes na construção do desafio proposto.
 
-A intenção é demonstrar os recursos disponíveis que eventualmente podem ser aplicados no desenvolvimento do projeto.
-
 ## Desafio Proposto 🕹
-O desafio consiste, com base em um escopo definido parcialmente, na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
+O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
 
-Também fica a critério de quem está implementando a escolha das tecnologias e arquitetura que serão utilizadas.
+Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
 
 As tecnologias apresentadas aqui estão direcionadas ao contexto **Java** e **Spring Framework**. 
 
-### Neste projeto não estão sendo abordadas melhores práticas de desenvolvimento ou tecnologias, sendo recomendado o estudo detalhado dos tópicos abordados.
+### Neste projeto não estão sendo abordadas melhores práticas de desenvolvimento ou tecnologias sendo recomendado o estudo detalhado dos tópicos abordados.
 
 ## Contextualização do Projeto 📚
 _________________________________________________________________________________
@@ -186,7 +182,7 @@ ________________________________________________________________________________
 ## 💡 Evolução dos Requisitos Não Funcionais
 _________________________________________________________________________________
 
-Sugestão de evolução dos Requisitos Não Funcionais:
+Sugestão de evolução:
 
 - Banco de Dados
     - Postgres
@@ -266,7 +262,7 @@ ________________________________________________________________________________
 ## 💾 Tecnologias
 _________________________________________________________________________________
 
-Os conceitos e tecnologias abordados neste projeto poderão auxiliar na implementação do desafio:
+Tecnologias abordadas:
 
 ✅ **API**
 
@@ -354,9 +350,9 @@ _Referência_
 _Referências_
 - https://www.4devs.com.br/
 
-## 💾 Conceitos Abordados
+## 💾 Ferramentas
 
-Os conceitos são pontos adicionais de estudo que podem auxiliar no decorrer da implementação: 
+Ferramentas utilizadas no decorrer da implementação:
 
 ✅ **IDE**
 
@@ -368,6 +364,8 @@ Os conceitos são pontos adicionais de estudo que podem auxiliar no decorrer da 
 
 ## 🔨 Melhorias
 _________________________________________________________________________________
+
+Sugestão de melhorias:
 
 - Inclusão de Testes Unitários
 - Utilizar versão mais recente do Spring e corrigir possíveis erros de dependências
