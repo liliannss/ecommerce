@@ -219,7 +219,7 @@ _Referência_
 
 - Travis CI ou GitHub Actions
 
-_Referências:_
+_Referências complementares:_
 - https://medium.com/codigorefinado/code-review-revis%C3%A3o-de-c%C3%B3digo-pode-ser-automatizada-ba5f25882774
 - https://medium.com/thiagobarradas/an%C3%A1lise-cont%C3%ADnua-de-qualidade-do-software-bb7b03518bcc
 - https://imasters.com.br/cloud/spring-boot-na-nuvem-de-graca-e-com-as-melhores-praticas
