@@ -85,7 +85,7 @@ ________________________________________________________________________________
         - 3GG
         - 4GG
     - Informações sobre o produto (campo livre)
-    - Total disponível no estoque
+    - Total disponível em estoque
 
 **Validações**
 
