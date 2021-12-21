@@ -279,12 +279,14 @@ ________________________________________________________________________________
 
 ✅ **Spring Framework**
 
+    ✅ **Arquivo application.properties**
+    ✅ **ResponseStatus x ResponseEntity**
+    ✅ **Validações com Spring**
+    ✅ **Anotações Jackson**
+    ✅ **Variáveis com Spring**
+
 ✅ **H2**
 - http://localhost:8081/javagirls/h2-console
-
-✅ **Arquivo application.properties**
-
-✅ **ResponseStatus x ResponseEntity**
 
 _Referência_
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
@@ -297,13 +299,9 @@ _Referência_
 
 ✅ **DTO (Data Transfer Object)**
 
-✅ **Validações com Spring**
-
 ✅ **ModelMapper**
 
 ✅ **Lombok**
-
-✅ **Anotações Jackson**
 
 ✅ **Swagger**
 - http://localhost:8081/javagirls/swagger-ui/index.html
@@ -334,8 +332,6 @@ _Referências_
 
 _Referência_
 - https://dev.to/daienelima/como-consumir-uma-api-na-sua-aplicacao-spring-boot-3p3a
-
-✅ **Variáveis com Spring**
 
 ✅ **Arquivo data.sql**
 - A nomenclatura do arquivo deve ser data.sql
