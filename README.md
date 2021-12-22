@@ -287,8 +287,14 @@ ________________________________________________________________________________
 ## 💾 Tecnologias
 
 ✅ **Spring Framework**
+Principais módulos:
+- Boot
+    - Web
+    - Data
+    - Validation
 
-- Arquivo application.properties
+Alguma das implementações:
+- Arquivo de configuração
 - ResponseStatus x ResponseEntity
 - Validações com Spring
 - Anotações Jackson
