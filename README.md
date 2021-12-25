@@ -355,7 +355,7 @@ _Referência_
 
 ✅ **Flyway**
 
-- Boas Práticas:
+- Boas práticas:
     - V01__criar_e_registrar_categorias.sql
     - Iniciar com V maiúsculo;
     - Dois caracteres para versionamento (boa prática para manter a ordenação);
