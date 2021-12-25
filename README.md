@@ -255,9 +255,9 @@ ________________________________________________________________________________
     - https://start.spring.io/
 
 
-- Estrutura básica de pacotes
+- Estrutura básica de pacotes (Arquitetura em Camadas)
     - Controllers
-        - Requisições (entrada / saída de dados)
+        - Requisições (request / response)
     - Models
         - Modelos de domínio
     - Services
