@@ -195,11 +195,6 @@ Sugestão de evolução:
 - Banco de Dados
     - Postgres
 - Spring Cloud
-    - Ribbon
-    - Resilience4J
-    - Eureka
-    - Zuul
-    - Config Server
 
 _Referência_
 
