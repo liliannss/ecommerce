@@ -1,20 +1,18 @@
 # PROJETO CRIADO PARA FINS DE ESTUDO
 
-Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo oferecer um desafio e abordar alguns
-conceitos e tecnologias disponíveis que eventualmente irão auxiliar na implementação.
+Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo abordar alguns conceitos e tecnologias que eventualmente irão auxiliar na implementação do desafio proposto.
 
 ## E-Commerce 🚚
 
 ## Desafio Proposto 🕹
 
-O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que
-deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
+O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
 
 Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
 
-As tecnologias apresentadas aqui estão direcionadas ao contexto **Java** e **Spring Framework**.
+As tecnologias apresentadas são direcionadas ao **Java** e **Spring Framework**.
 
-### Não estão sendo abordadas melhores práticas de desenvolvimento ou o aprofundamento das tecnologias sendo recomendado o estudo e prática dos tópicos abordados.
+### Não estão sendo abordadas melhores práticas de desenvolvimento ou o aprofundamento das tecnologias e conceitos sendo recomendado o estudo e prática dos tópicos abordados.
 
 ## Contextualização do Projeto 📚
 
