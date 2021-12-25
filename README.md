@@ -94,10 +94,9 @@ ________________________________________________________________________________
 
 **Validações**
 
-- Não será possível o cadastro de mais de um modelo com o mesmo nome
 - O padrão monetário adotado será o REAL (duas casas decimais separadas por vírgula)
-- Não deverá existir cores com o mesmo nome
-- O total não deverá ultrapassar 100 unidades por modelo
+- Não deverão existir cores com o mesmo nome
+- O total de cada produto não deverá ultrapassar 100 unidades por modelo
 
 **Critério de Aceite**
 
