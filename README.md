@@ -73,22 +73,26 @@ ________________________________________________________________________________
 
 ### 💻 Cadastro de Produto
 
-- Para cadastro de um produto deverá obrigatoriamente ser informado:
+**CREATE**
+
+- Para criação de um produto deverá obrigatoriamente ser informado:
     - Nome
     - Valor
     - Nome da Cor
     - Modelagem
-        - Masculina Gola Olímpica
-        - Feminina Gola U
-        - Feminina Gola Olímpica
-    - Tamanhos disponíveis
-        - P
-        - M
-        - G
-        - GG
-        - 2GG
-        - 3GG
-        - 4GG
+        -  Tipos:
+            - Masculina Gola Olímpica
+            - Feminina Gola U
+            - Feminina Gola Olímpica
+    - Tamanho
+        - Dimensções: 
+            - P
+            - M
+            - G
+            - GG
+            - 2GG
+            - 3GG
+            - 4GG
     - Descrição do produto (campo livre)
     - Total
 
@@ -102,12 +106,20 @@ ________________________________________________________________________________
 
 - O produto deverá ser inserido no Banco de Dados de acordo com as regras de validações
 
+**Sugestão**
+
+- Adicionar novas regras de validação
+- Implementar as demais operações de CRUD
+
 ### 💻 Cadastro de Venda
 
-- Para cadastro de uma venda obrigatoriamente deverá ser informado:
+**CREATE**
+
+- Para criação de uma venda obrigatoriamente deverá ser informado:
     - Código do cliente
     - Código do produto
-    - Quantidade de unidades a serem compradas
+    - Modelo do produto
+    - Tamanho do produto
 
 **Validações**
 
@@ -121,6 +133,11 @@ ________________________________________________________________________________
 
 - Adicionar campo livre para avaliação das compras realizadas por determinado cliente
 - O campo deverá constar na listagem dos produtos
+
+**Sugestão**
+
+- Adicionar novas regras de validação
+- Implementar as demais operações de CRUD
 
 ### 💻 Cadastro de Usuário
 
