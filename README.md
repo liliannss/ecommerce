@@ -80,12 +80,12 @@ ________________________________________________________________________________
     - Valor
     - Nome da cor
     - Modelagem
-        -  Tipos:
+        -  Modelagens existentes:
             - Masculina Gola Olímpica
             - Feminina Gola U
             - Feminina Gola Olímpica
     - Tamanho
-        - Dimensções: 
+        - Tamanhos existentes: 
             - P
             - M
             - G
