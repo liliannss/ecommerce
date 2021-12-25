@@ -120,6 +120,7 @@ ________________________________________________________________________________
     - Código do produto
     - Modelo do produto
     - Tamanho do produto
+    - Total de unidades
 
 **Validações**
 
