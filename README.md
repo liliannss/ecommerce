@@ -167,6 +167,7 @@ ________________________________________________________________________________
 
 - Consulta por nome
 - Consulta por e-mail
+- Consulta por nome e e-mail
 - Consulta por endereço
 
 **Validações**
