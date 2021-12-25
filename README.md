@@ -131,7 +131,7 @@ ________________________________________________________________________________
 - Não será permitido o cadastro de um usuário menor de 18 anos
 - RG e CPF devem ser números válidos e únicos por usuário
 - O E-mail informado deverá ser válido e único por usuário
-- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado na base externa o endereço completo deverá ser preenchido manualmente
+- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado na base externa deverá ser preenchido manualmente
 
 **Critério de Aceite**
 
