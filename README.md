@@ -10,7 +10,7 @@ O desafio consiste, com base em um escopo definido parcialmente (incompleto), na
 
 Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
 
-As tecnologias apresentadas são direcionadas ao **Java** e **Spring Framework**.
+As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framework**.
 
 ### Não estão sendo abordadas melhores práticas de desenvolvimento ou o aprofundamento das tecnologias e conceitos sendo recomendado o estudo e prática dos tópicos abordados.
 
