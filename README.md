@@ -111,6 +111,47 @@ ________________________________________________________________________________
 - Adicionar novas regras de validação
 - Implementar as demais operações de CRUD
 
+### 💻 Cadastro de Usuário
+
+**CREATE**
+
+- Para cadastro de um usuário deverá obrigatoriamente ser informado:
+    - Nome completo
+    - Data de nascimento
+    - RG
+    - CPF
+    - CEP
+    - Telefone fixo
+    - Telefone celular
+    - E-mail
+
+**Validações**
+
+- Não será permitido o cadastro de um usuário menor de 18 anos
+- RG e CPF devem ser números válidos e únicos por usuário
+- O E-mail informado deverá ser válido e único por usuário
+- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado pelo número informado deverá ser preenchido manualmente
+
+**Critério de Aceite**
+
+- O usuário deverá ser inserido no Banco de Dados de acordo com as regras de validações
+
+**READ**
+
+- Consulta por nome
+- Consulta por e-mail
+- Consulta por nome e e-mail
+- Consulta por endereço
+
+**Validações**
+
+- Requisito Funcional Geral - RFG1 (vide abaixo)
+
+**Sugestão**
+
+- Adicionar novas regras de validação
+- Implementar as demais operações de CRUD
+
 ### 💻 Cadastro de Venda
 
 **CREATE**
@@ -140,41 +181,9 @@ ________________________________________________________________________________
 - Adicionar novas regras de validação
 - Implementar as demais operações de CRUD
 
-### 💻 Cadastro de Usuário
-
-- Para cadastro de um usuário deverá obrigatoriamente ser informado:
-    - Nome completo
-    - Data de nascimento
-    - RG
-    - CPF
-    - CEP
-    - Telefone fixo
-    - Telefone celular
-    - E-mail
-
-**Validações**
-
-- Não será permitido o cadastro de um usuário menor de 18 anos
-- RG e CPF devem ser números válidos e únicos por usuário
-- O E-mail informado deverá ser válido e único por usuário
-- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado pelo número informado deverá ser preenchido manualmente
-
-**Critério de Aceite**
-
-- O usuário deverá ser inserido no Banco de Dados de acordo com as regras de validações
-
-### 💻 Consulta de Usuário
-
-- Consulta por nome
-- Consulta por e-mail
-- Consulta por nome e e-mail
-- Consulta por endereço
-
-**Validações**
-
-- Requisito Funcional Geral - RFG1 (vide abaixo)
-
 ### 💻 Cadastro de Entrega
+
+**CREATE**
 
 - Para cadastro de uma entrega deverá obrigatoriamente ser informado:
     - Código da venda
