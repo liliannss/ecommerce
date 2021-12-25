@@ -8,7 +8,7 @@ Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo
 
 O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
 
-Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas, porém recomenda-se que sejam APIs.
+Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas, porém recomenda-se que seja uma API Rest.
 
 As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framework**.
 
