@@ -233,7 +233,7 @@ _Referências complementares:_
 
 ### Testes Unitários
 
-- JUnit5
+- JUnit 5
 
 ### Observabilidade
 
