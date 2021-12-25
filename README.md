@@ -307,7 +307,7 @@ _Referência_
 
 ✅ **Classe Embeddable**
 
-✅ **DTO (Data Transfer Object)**
+✅ **DTO (Data transfer object)**
 
 ✅ **ModelMapper**
 
