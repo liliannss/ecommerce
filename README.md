@@ -167,7 +167,10 @@ ________________________________________________________________________________
 
 **Validações**
 
-- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo produto por usuário na mesma compra
+- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo produto por usuário na mesma venda
+- Deverá ser retornado ao usuário o valor total da venda
+- O total a pagar deverá ser a soma do total da venda e da entrega
+- A venda somente será efetivada caso o usuário concorde com o valor total a pagar
 
 **Critério de Aceite**
 
@@ -175,7 +178,7 @@ ________________________________________________________________________________
 
 **Bônus**
 
-- Adicionar campo livre para que o usuário avalie compras entregues
+- Adicionar campo livre para que o usuário avalie vendas entregues
 - O campo de avaliação deverá constar na listagem de produtos
 
 **Sugestão**
@@ -192,8 +195,8 @@ ________________________________________________________________________________
 
 **Critério de Aceite**
 
-- Deverá ser informado ao usuário o valor do frete e prazo de entrega
-- A entrega deverá ser inserida no Banco de Dados
+- Deverá ser informado ao usuário o valor do frete e o prazo de entrega
+- A entrega deverá ser inserida no Banco de Dados de acordo com as regras de validações
 
 ### 📁 Requisito Funcional Geral - RFG1
 
