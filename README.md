@@ -167,7 +167,7 @@ ________________________________________________________________________________
 
 **Validações**
 
-- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo produto por usuário na mesma venda
+- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo código de produto por usuário na mesma venda
 - Deverá ser retornado ao usuário o valor total da venda
 - O total a pagar deverá ser a soma do total da venda e da entrega
 - A venda somente será efetivada caso o usuário concorde com o valor total a pagar
