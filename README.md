@@ -1,4 +1,4 @@
-# Projeto criado para fins de estudo
+# PROJETO CRIADO PARA FINS DE ESTUDO
 
 Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo oferecer um desafio e abordar alguns
 conceitos e tecnologias disponíveis que eventualmente irão auxiliar na implementação.
