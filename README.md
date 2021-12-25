@@ -147,17 +147,17 @@ ________________________________________________________________________________
     - Data de nascimento
     - RG
     - CPF
+    - CEP
     - Telefone fixo
     - Telefone celular
     - E-mail
-    - Endereço
 
 **Validações**
 
 - Não será permitido o cadastro de um usuário menor de 18 anos
 - RG e CPF devem ser números válidos e únicos por usuário
 - O E-mail informado deverá ser válido e único por usuário
-- O CEP do endereço deverá ser informado obrigatoriamente
+- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado pelo número informamdo  deverá ser preenchido de forma manual
 
 **Critério de Aceite**
 
