@@ -78,7 +78,7 @@ ________________________________________________________________________________
 - Para criação de um produto deverá obrigatoriamente ser informado:
     - Nome
     - Valor
-    - Nome da Cor
+    - Nome da cor
     - Modelagem
         -  Tipos:
             - Masculina Gola Olímpica
