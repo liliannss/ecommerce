@@ -338,7 +338,6 @@ _Referências_
 
 - https://www.baeldung.com/spring-data-jpa-query
 - https://www.javaguides.net/2018/11/spring-data-jpa-creating-database-queries-using-query-annotation.html
-- http://www.h2database.com/html/functions.html#lower
 
 ✅ **Consumo de WebService**
 
