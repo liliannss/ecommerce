@@ -201,10 +201,9 @@ _Referência_
 - https://www.udemy.com/course/microsservicos-java-spring-cloud
 
 
-- Autenticação e Autorização
-    - OAuth
-    - JWT
-    - Keycloak
+- Autenticação
+    - Keycloak 
+- Autorização
 
 ### Disponibilização da Aplicação
 
