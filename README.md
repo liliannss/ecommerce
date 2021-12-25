@@ -74,9 +74,9 @@ ________________________________________________________________________________
 ### 💻 Cadastro de Produto
 
 - Para cadastro de um produto deverá obrigatoriamente ser informado:
-    - Nome do modelo
+    - Nome
     - Valor
-    - Cores disponíveis
+    - Nome da Cor
     - Modelagem
         - Masculina Gola Olímpica
         - Feminina Gola U
@@ -89,8 +89,8 @@ ________________________________________________________________________________
         - 2GG
         - 3GG
         - 4GG
-    - Informações sobre o produto (campo livre)
-    - Total disponível em estoque
+    - Descrição do produto (campo livre)
+    - Total
 
 **Validações**
 
