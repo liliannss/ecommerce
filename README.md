@@ -1,4 +1,4 @@
-# PROJETO CRIADO PARA FINS DE ESTUDO 📙
+# PROJETO CRIADO PARA FINS DE ESTUDO 🗜
 
 Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo abordar alguns conceitos e tecnologias que eventualmente irão auxiliar na implementação do desafio proposto.
 
