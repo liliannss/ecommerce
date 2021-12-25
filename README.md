@@ -318,7 +318,7 @@ _Referência_
 
 ✅ **Swagger**
 
-- http://localhost:8081/ecommerce/swagger-ui/index.html
+- http://localhost:8081/ecommerce/swagger-ui.html
 
 ✅ **Versionamento de API**
 
