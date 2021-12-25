@@ -158,7 +158,7 @@ ________________________________________________________________________________
 **CREATE**
 
 - Para criação de uma venda obrigatoriamente deverá ser informado:
-    - Código do cliente
+    - Código do usuário
     - Código do produto
     - Modelo do produto
     - Tamanho do produto
