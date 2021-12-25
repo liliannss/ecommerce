@@ -124,7 +124,7 @@ ________________________________________________________________________________
 
 **Validações**
 
-- A quantidade vendida não poderá ultrapassar o total de 10 unidades por cliente
+- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo produto por cliente na mesma compra
 
 **Critério de Aceite**
 
