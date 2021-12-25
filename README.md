@@ -159,10 +159,11 @@ ________________________________________________________________________________
 
 - Para criação de uma venda obrigatoriamente deverá ser informado:
     - Código do usuário
-    - Código do produto
-    - Modelo do produto
-    - Tamanho do produto
-    - Total de unidades
+    - Produto
+        - Código 
+        - Modelo
+        - Tamanho
+        - Total de unidades
 
 **Validações**
 
