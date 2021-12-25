@@ -146,7 +146,7 @@ ________________________________________________________________________________
 
 **Validações**
 
-- Requisito Funcional Geral - RFG1 (vide abaixo)
+- RFG1 (Requisito Funcional Geral)
 
 **Sugestão**
 
