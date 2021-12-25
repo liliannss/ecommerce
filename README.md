@@ -175,7 +175,7 @@ ________________________________________________________________________________
 
 **Bônus**
 
-- Adicionar campo livre para avaliação dos usuários das compras entregues
+- Adicionar campo livre para que o usuário avalie compras entregues
 - O campo de avaliação deverá constar na listagem de produtos
 
 **Sugestão**
