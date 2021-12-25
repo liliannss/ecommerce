@@ -276,6 +276,10 @@ ________________________________________________________________________________
 
 ✅ **Rest**
 
+Principais conceitos:
+- Métodos HTTP
+- Códigos de Status HTTP
+
 ## 💾 Tecnologias
 
 ✅ **Spring Framework**
