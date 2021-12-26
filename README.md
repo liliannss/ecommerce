@@ -112,7 +112,7 @@ ________________________________________________________________________________
 
 **Sugestão**
 
-- Adicionar novas regras de validação
+- Adicionar novas regras de negócio
 - Implementar as demais operações de CRUD
 
 ### 💻 Cadastro de Usuário
@@ -155,7 +155,7 @@ ________________________________________________________________________________
 
 **Sugestão**
 
-- Adicionar novas regras de validação
+- Adicionar novas regras de negócio
 - Implementar as demais operações de CRUD
 
 ### 💻 Cadastro de Venda
@@ -189,7 +189,7 @@ ________________________________________________________________________________
 
 **Sugestão**
 
-- Adicionar novas regras de validação
+- Adicionar novas regras de negócio
 - Implementar as demais operações de CRUD
 
 ### 💻 Cadastro de Entrega
