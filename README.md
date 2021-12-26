@@ -110,6 +110,11 @@ ________________________________________________________________________________
 
 - O produto deverá ser inserido no Banco de Dados de acordo com as regras de negócio
 
+**Bônus**
+
+- Adicionar campo livre para que o usuário avalie o produto assim que a venda for entregue
+- O campo de avaliação deverá constar na consulta de produtos
+
 **Sugestão**
 
 - Adicionar novas regras de negócio
@@ -177,15 +182,11 @@ ________________________________________________________________________________
 - Deverá ser retornado ao usuário o valor total da venda
 - O total a pagar deverá ser a soma do total da venda e da entrega
 - A venda somente será efetivada caso o usuário concorde com o valor total a pagar
+- A venda somente será concluída assim que a entrega for finalizada
 
 **Critério de Aceite**
 
 - A venda deverá ser inserida no Banco de Dados de acordo com as regras de negócio
-
-**Bônus**
-
-- Adicionar campo livre para que o usuário avalie vendas entregues por tipo de produto
-- O campo de avaliação deverá constar na listagem de produtos
 
 **Sugestão**
 
