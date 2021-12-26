@@ -23,11 +23,11 @@ public class CepServiceImpl {
 
     private final CepService service;
 
-    public Address getCepWithFeign(String cep) {
+    public Address getAddressWithFeignByCep(String cep) {
         return service.findAddressByCep(cep);
     }
 
-    public Address getCepWithWebClient(String cep) {
+    public Address getAddressWithWebClientByCep(String cep) {
         return WebClient.create().get()
                 .uri(uri, cep)
                 .retrieve()
@@ -35,7 +35,7 @@ public class CepServiceImpl {
                 .block();
     }
 
-    public Address getCepWithRestTemplate(String cep) {
+    public Address getAddressWithRestTemplateByCep(String cep) {
         return restTemplate.getForObject(uri, Address.class, Map.of("cep", cep));
     }
 }

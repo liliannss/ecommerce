@@ -8,12 +8,14 @@ import java.util.List;
 
 public interface UserService {
 
-    UserEntity createFeign(String cep, UserEntity userEntity);
-    UserEntity createWebClient(String cep, UserEntity userEntity);
-    UserEntity createRestTemplate(String cep, UserEntity userEntity);
+    UserEntity createWithFeign(String cep, UserEntity userEntity);
+    UserEntity createWithWebClient(String cep, UserEntity userEntity);
+    UserEntity createWithRestTemplate(String cep, UserEntity userEntity);
     UserEntity findById(Long id);
-    List<UserEntity> findByNameAndEmailQueryMethods(String name, String email);
-    List<UserEntity> findByNameAndEmailJPQL(String name, String email);
-    List<UserEntity> findByNameAndEmailNativeQuery(String name, String email);
+    List<UserEntity> findByNameAndEmailWithQueryMethods(String name, String email);
+    List<UserEntity> findByNameAndEmailWithJPQL(String name, String email);
+    List<UserEntity> findByNameAndEmailWithNativeQuery(String name, String email);
     Page<UserEntity> findByNameAndEmailPaginated(Pageable pageable);
+    UserEntity update(Long id, UserEntity userEntity);
+    void delete(Long id);
 }

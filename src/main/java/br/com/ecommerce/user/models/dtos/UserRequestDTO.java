@@ -41,7 +41,7 @@ public class UserRequestDTO {
     private String cellPhone;
 
     @Email
-    @Schema(example = "test@test")
+    @Schema(example = "teste@teste")
     private String email;
 
     @Schema(example = "111")

@@ -1,14 +1,17 @@
 # PROJETO CRIADO PARA FINS DE ESTUDO 📒
 
-Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo abordar alguns conceitos e tecnologias que eventualmente irão auxiliar na implementação do desafio proposto.
+Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo abordar alguns conceitos e tecnologias
+que eventualmente irão auxiliar na implementação do desafio proposto.
 
 ## E-commerce 🚚
 
 ## Desafio Proposto 🕹
 
-O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
+O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que
+deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
 
-Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas, porém recomenda-se que seja uma API Rest.
+Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas, porém recomenda-se que seja uma API
+Rest.
 
 As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framework**.
 
@@ -80,12 +83,12 @@ ________________________________________________________________________________
     - Valor
     - Nome da cor
     - Modelagem
-        -  Modelagens existentes:
+        - Modelagens existentes:
             - Masculina Gola Olímpica
             - Feminina Gola U
             - Feminina Gola Olímpica
     - Tamanho
-        - Tamanhos existentes: 
+        - Tamanhos existentes:
             - P
             - M
             - G
@@ -131,7 +134,8 @@ ________________________________________________________________________________
 - Não será permitido o cadastro de um usuário menor de 18 anos
 - RG e CPF devem ser números válidos e únicos por usuário
 - O E-mail informado deverá ser válido e único por usuário
-- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado na base externa deverá ser preenchido manualmente
+- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado na base externa deverá ser
+  preenchido manualmente
 
 **Critério de Aceite**
 
@@ -160,14 +164,15 @@ ________________________________________________________________________________
 - Para criação de uma venda obrigatoriamente deverá ser informado:
     - Código do usuário
     - Produto
-        - Código 
+        - Código
         - Modelo
         - Tamanho
         - Total de unidades
 
 **Validações**
 
-- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo código de produto por usuário na mesma venda
+- A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo código de produto por usuário na mesma
+  venda
 - Deverá ser retornado ao usuário o valor total da venda
 - O total a pagar deverá ser a soma do total da venda e da entrega
 - A venda somente será efetivada caso o usuário concorde com o valor total a pagar
@@ -234,7 +239,7 @@ _Referência_
 
 
 - Autenticação
-    - Keycloak 
+    - Keycloak
 - Autorização
 
 ### Disponibilização da Aplicação
@@ -309,6 +314,7 @@ ________________________________________________________________________________
 ✅ **Rest**
 
 Principais conceitos:
+
 - Métodos HTTP
 - Códigos de Status HTTP
 
@@ -317,12 +323,14 @@ Principais conceitos:
 ✅ **Spring Framework**
 
 Principais módulos:
+
 - Boot
     - Web
     - Data
     - Validation
 
 Alguma das implementações:
+
 - Arquivo de configuração
 - ResponseStatus x ResponseEntity
 - Validações com Spring

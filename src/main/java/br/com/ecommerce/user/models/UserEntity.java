@@ -10,7 +10,6 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Entity
 @Getter
 @Setter
-@Builder
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor

@@ -30,12 +30,12 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(ResponseStatusException.class)
     public ResponseEntity<Object> responseStatusException(ResponseStatusException ex) {
-        return handleExceptionInternal(ex, getErrorDTO(ex.getStatus(), Collections.singletonList(ex.getMessage()), httpServletRequest), null, ex.getStatus(), null);
+        return handleExceptionInternal(ex, buildErrorDTO(ex.getStatus(), Collections.singletonList(ex.getReason()), httpServletRequest), null, ex.getStatus(), null);
     }
 
     @Override
     protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
-        return handleExceptionInternal(ex, getErrorDTO(status, Collections.singletonList(ex.getMessage()), httpServletRequest), headers, status, request);
+        return handleExceptionInternal(ex, buildErrorDTO(status, Collections.singletonList(ex.getMessage()), httpServletRequest), headers, status, request);
     }
 
     @Override
@@ -46,10 +46,10 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 .stream()
                 .map(fieldError -> fieldError.getDefaultMessage())
                 .collect(Collectors.toList());
-        return handleExceptionInternal(ex, getErrorDTO(status, fieldErrorList, httpServletRequest), headers, status, request);
+        return handleExceptionInternal(ex, buildErrorDTO(status, fieldErrorList, httpServletRequest), headers, status, request);
     }
 
-    private ErrorDTO getErrorDTO(HttpStatus httpStatus, List<String> message, HttpServletRequest httpServletRequest) {
+    private ErrorDTO buildErrorDTO(HttpStatus httpStatus, List<String> message, HttpServletRequest httpServletRequest) {
         return ErrorDTO
                 .builder()
                 .status(httpStatus)
