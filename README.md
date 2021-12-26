@@ -179,7 +179,7 @@ ________________________________________________________________________________
 
 - A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo código de produto por usuário na mesma
   venda
-- Deverá ser retornado ao usuário o valor total da venda
+- Deverá ser retornado ao usuário o valor total da venda (valor unitário do produto * total de unidades a serem compradas)
 - O total a pagar deverá ser a soma do total da venda e da entrega
 - A venda somente será efetivada caso o usuário concorde com o valor total a pagar
 - A venda somente será concluída assim que a entrega for finalizada
