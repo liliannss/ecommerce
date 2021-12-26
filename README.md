@@ -19,7 +19,7 @@ Também fica a critério a escolha das tecnologias e arquitetura que serão util
 
 _________________________________________________________________________________
 
-- Sistema de e-commerce responsável pelo cadastro de vestuário, venda online e entrega.
+- Sistema de E-commerce responsável pelo cadastro de vestuário, venda online e entrega.
 
 ### 🔎 Qual tipo de vestuário?
 
@@ -29,7 +29,7 @@ https://pt.wikipedia.org/wiki/Categoria:Vestu%C3%A1rio
 
 *Resposta: camisetas.*
 
-- Sistema de e-commerce responsável pelo cadastro de camisetas, venda online e entrega.
+- Sistema de E-commerce responsável pelo cadastro de camisetas, venda online e entrega.
 
 ### 🔎 Qualquer pessoa pode comprar?
 
@@ -37,7 +37,7 @@ ________________________________________________________________________________
 
 *Resposta: somente usuários cadastrados no sistema.*
 
-- Sistema de e-commerce responsável pelo cadastro de camisetas, venda online para usuários cadastrados e entrega.
+- Sistema de E-commerce responsável pelo cadastro de camisetas, venda online para usuários cadastrados e entrega.
 
 ### 🔎 Delimitação do Contexto
 
