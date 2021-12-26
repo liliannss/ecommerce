@@ -104,7 +104,7 @@ ________________________________________________________________________________
 - O padrão monetário adotado será o REAL (duas casas decimais separadas por vírgula)
 - Não deverão existir cores com o mesmo nome
 - O total de cada produto em estoque não deverá ultrapassar 100 unidades por modelo
-- O total dos produtos disponíveis deverá ser atualizado mediante vendas efetivadas
+- O total dos produtos disponível deverá ser atualizado mediante vendas efetivadas
 
 **Critério de Aceite**
 
