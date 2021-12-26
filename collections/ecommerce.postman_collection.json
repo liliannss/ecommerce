@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "c0f5fc08-120e-4a51-97cd-49693906618c",
+		"name": "ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"rg\": \"237253847\",\n  \"cpf\": \"45028438064\",\n  \"email\": \"teste@teste\",\n  \"nome\": \"Teste\",\n  \"nascimento\": \"2021-12-18\",\n  \"telefone\": \"324-763-1348\",\n  \"celular\": \"251-269-0832\",\n  \"numero\": \"111\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/ecommerce/v1/users/17800970/feign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ecommerce",
+						"v1",
+						"users",
+						"17800970",
+						"feign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/ecommerce/v1/users/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ecommerce",
+						"v1",
+						"users",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/ecommerce/v1/users/query-method?name=Teste&email=teste",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ecommerce",
+						"v1",
+						"users",
+						"query-method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Teste"
+						},
+						{
+							"key": "email",
+							"value": "teste"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"rg\": \"237253847\",\n  \"cpf\": \"45028438064\",\n  \"email\": \"teste@teste\",\n  \"nome\": \"Teste\",\n  \"nascimento\": \"2021-12-18\",\n  \"telefone\": \"324-763-1348\",\n  \"celular\": \"251-269-0832\",\n  \"numero\": \"111\",\n  \"endereco\": {\n    \"logradouro\": \"string\",\n    \"numero\": \"string\",\n    \"bairro\": \"string\",\n    \"localidade\": \"string\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/ecommerce/v1/users/24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ecommerce",
+						"v1",
+						"users",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
