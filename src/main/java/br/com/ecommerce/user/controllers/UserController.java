@@ -49,7 +49,7 @@ public class UserController {
     @PostMapping("/{cep}/feign")
     @ResponseStatus(CREATED)
     @Tag(name = "CREATE")
-    @Operation(summary = "Create User")
+    @Operation(summary = "Create User", description = "Create User using Feign")
     @ApiResponses(value = {
             @ApiResponse(description = "User Created with Success", responseCode = "201",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
@@ -73,7 +73,7 @@ public class UserController {
 
     @PostMapping("/{cep}/web-client")
     @Tag(name = "CREATE")
-    @Operation(summary = "Create User")
+    @Operation(summary = "Create User", description = "Create User using WebClient")
     @ApiResponses(value = {
             @ApiResponse(description = "User Created with Success", responseCode = "201",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
@@ -104,7 +104,7 @@ public class UserController {
     @PostMapping("/{cep}/rest-template")
     @ResponseStatus(CREATED)
     @Tag(name = "CREATE")
-    @Operation(summary = "Create User")
+    @Operation(summary = "Create User", description = "Create User using RestTemplate")
     @ApiResponses(value = {
             @ApiResponse(description = "User Created with Success", responseCode = "201",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
@@ -138,7 +138,7 @@ public class UserController {
     @GetMapping("/{id}")
     @ResponseStatus(OK)
     @Tag(name = "READ")
-    @Operation(summary = "Find User by Id")
+    @Operation(summary = "Find User by Id", description = "Find User using CrudRepository")
     @ApiResponses(value = {
             @ApiResponse(description = "User Consulted with Success", responseCode = "200",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
@@ -155,21 +155,21 @@ public class UserController {
         return userDTO;
     }
 
-    @GetMapping("query-methods")
+    @GetMapping("query-method")
     @ResponseStatus(OK)
     @Tag(name = "READ")
-    @Operation(summary = "Find Users by Name and Email - Query Methods")
+    @Operation(summary = "Find Users by Name and Email", description = "Find User using Query Method")
     @ApiResponses(value = {
             @ApiResponse(description = "Users Consulted with Success", responseCode = "200",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
     })
-    public List<UserResponseDTO> findByNameAndEmailWithQueryMethods(@RequestParam @Schema(example = "Teste") String name,
-                                                                    @RequestParam @Schema(example = "teste") String email) {
-        log.info("Start method findByNameAndEmailWithQueryMethods name={} email={}", name, email);
-        List<UserEntity> userEntityList = service.findByNameAndEmailWithQueryMethods(name, email);
+    public List<UserResponseDTO> findByNameAndEmailWithQueryMethod(@RequestParam @Schema(example = "Teste") String name,
+                                                                   @RequestParam @Schema(example = "teste") String email) {
+        log.info("Start method findByNameAndEmailWithQueryMethod name={} email={}", name, email);
+        List<UserEntity> userEntityList = service.findByNameAndEmailWithQueryMethod(name, email);
 
         List<UserResponseDTO> userResponseDTOList = converterEntityListToDTOList(userEntityList);
-        log.info("Finish method findByNameAndEmailWithQueryMethods={}", userResponseDTOList);
+        log.info("Finish method findByNameAndEmailWithQueryMethod={}", userResponseDTOList);
 
         return userResponseDTOList;
     }
@@ -177,7 +177,7 @@ public class UserController {
     @GetMapping("/jpql")
     @ResponseStatus(OK)
     @Tag(name = "READ")
-    @Operation(summary = "Find Users by Name and Email - JPQL")
+    @Operation(summary = "Find Users by Name and Email", description = "Find User using JPQL")
     @ApiResponses(value = {
             @ApiResponse(description = "Users consulted with Success", responseCode = "200",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
@@ -196,7 +196,7 @@ public class UserController {
     @GetMapping("/native-query")
     @ResponseStatus(OK)
     @Tag(name = "READ")
-    @Operation(summary = "Find Users by Name and Email - Native Query")
+    @Operation(summary = "Find Users by Name and Email", description = "Find User using Native Query")
     @ApiResponses(value = {
             @ApiResponse(description = "Users consulted with Success", responseCode = "200",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
@@ -215,14 +215,14 @@ public class UserController {
     @GetMapping("/paginated")
     @ResponseStatus(OK)
     @Tag(name = "READ")
-    @Operation(summary = "Find All - Paginated")
+    @Operation(summary = "Find All", description = "Find User using Pageable")
     @ApiResponses(value = {
             @ApiResponse(description = "Users consulted with Success", responseCode = "200",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
     })
     public Page<UserResponseDTO> findByNameAndEmailPaginated(
             @RequestParam(value = "page", defaultValue = "0") Integer page,
-            @RequestParam(value = "size", defaultValue = "10") Integer size,
+            @RequestParam(value = "size", defaultValue = "15") Integer size,
             @RequestParam(value = "direction", defaultValue = "ASC") String direction,
             @RequestParam(value = "sort", defaultValue = "name") String sort) {
         log.info("Start method findByNameAndEmailPaginated page={} size={}", page, size);
@@ -245,7 +245,7 @@ public class UserController {
     @PutMapping("/{id}")
     @ResponseStatus(OK)
     @Tag(name = "UPDATE")
-    @Operation(summary = "Update User by Id")
+    @Operation(summary = "Update User by Id", description = "Update User")
     @ApiResponses(value = {
             @ApiResponse(description = "User Updated with Success", responseCode = "200",
                     content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
@@ -280,7 +280,7 @@ public class UserController {
     @DeleteMapping("/{id}")
     @ResponseStatus(NO_CONTENT)
     @Tag(name = "DELETE")
-    @Operation(summary = "Delete User by Id")
+    @Operation(summary = "Delete User by Id", description = "Delete User")
     @ApiResponses(value = {
             @ApiResponse(description = "User Deleted with Success", responseCode = "204"),
             @ApiResponse(description = "User Not Found", responseCode = "404",

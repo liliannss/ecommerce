@@ -12,7 +12,7 @@ public interface UserService {
     UserEntity createWithWebClient(String cep, UserEntity userEntity);
     UserEntity createWithRestTemplate(String cep, UserEntity userEntity);
     UserEntity findById(Long id);
-    List<UserEntity> findByNameAndEmailWithQueryMethods(String name, String email);
+    List<UserEntity> findByNameAndEmailWithQueryMethod(String name, String email);
     List<UserEntity> findByNameAndEmailWithJPQL(String name, String email);
     List<UserEntity> findByNameAndEmailWithNativeQuery(String name, String email);
     Page<UserEntity> findByNameAndEmailPaginated(Pageable pageable);

@@ -8,8 +8,9 @@ import org.springdoc.webmvc.ui.SwaggerConfig;
 @OpenAPIDefinition(
         info = @Info(
                 title = "E-COMMERCE",
-                description = "XXX",
-                contact = @Contact(url = "XXX", name = "XXX")))
+                description = "Projeto criado para fins de estudo - Conceitos e tecnologias que eventualmente irão " +
+                        "auxiliar na implementação do desafio proposto",
+                contact = @Contact(name = "liliannss", url = "https://github.com/liliannss/ecommerce")))
 public class SwaggerConfiguration extends SwaggerConfig {
 
 }

@@ -83,12 +83,12 @@ ________________________________________________________________________________
     - Valor
     - Nome da cor
     - Modelagem
-        - Modelagens existentes:
+        - Modelagens disponíveis:
             - Masculina Gola Olímpica
             - Feminina Gola U
             - Feminina Gola Olímpica
     - Tamanho
-        - Tamanhos existentes:
+        - Tamanhos disponíveis:
             - P
             - M
             - G
@@ -99,15 +99,16 @@ ________________________________________________________________________________
     - Descrição do produto (campo livre)
     - Total
 
-**Validações**
+**Regras de Negócio**
 
 - O padrão monetário adotado será o REAL (duas casas decimais separadas por vírgula)
 - Não deverão existir cores com o mesmo nome
 - O total de cada produto não deverá ultrapassar 100 unidades por modelo
+- O total dos produtos disponíveis deverá ser atualizado mediante vendas efetivadas
 
 **Critério de Aceite**
 
-- O produto deverá ser inserido no Banco de Dados de acordo com as regras de validações
+- O produto deverá ser inserido no Banco de Dados de acordo com as regras de negócio
 
 **Sugestão**
 
@@ -129,17 +130,17 @@ ________________________________________________________________________________
     - Telefone celular
     - E-mail
 
-**Validações**
+**Regras de Negócio**
 
 - Não será permitido o cadastro de um usuário menor de 18 anos
 - RG e CPF devem ser números válidos e únicos por usuário
 - O E-mail informado deverá ser válido e único por usuário
-- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado na base externa deverá ser
-  preenchido manualmente
+- O CEP deverá ser informado obrigatoriamente e caso o endereço não seja localizado na base externa o registro deverá ser
+  atualizado manualmente
 
 **Critério de Aceite**
 
-- O usuário deverá ser inserido no Banco de Dados de acordo com as regras de validações
+- O usuário deverá ser inserido no Banco de Dados de acordo com as regras de negócio
 
 **READ**
 
@@ -148,7 +149,7 @@ ________________________________________________________________________________
 - Consulta por nome e e-mail
 - Consulta por endereço
 
-**Validações**
+**Regras de Negócio**
 
 - RFG1 (Requisito Funcional Geral)
 
@@ -169,7 +170,7 @@ ________________________________________________________________________________
         - Tamanho
         - Total de unidades
 
-**Validações**
+**Regras de Negócio**
 
 - A quantidade vendida não poderá ultrapassar o total de 50 unidades de um mesmo código de produto por usuário na mesma
   venda
@@ -179,11 +180,11 @@ ________________________________________________________________________________
 
 **Critério de Aceite**
 
-- A venda deverá ser inserida no Banco de Dados de acordo com as regras de validações
+- A venda deverá ser inserida no Banco de Dados de acordo com as regras de negócio
 
 **Bônus**
 
-- Adicionar campo livre para que o usuário avalie vendas entregues
+- Adicionar campo livre para que o usuário avalie vendas entregues por tipo de produto
 - O campo de avaliação deverá constar na listagem de produtos
 
 **Sugestão**
@@ -201,7 +202,7 @@ ________________________________________________________________________________
 **Critério de Aceite**
 
 - Deverá ser informado ao usuário o valor do frete e o prazo de entrega
-- A entrega deverá ser inserida no Banco de Dados de acordo com as regras de validações
+- A entrega deverá ser inserida no Banco de Dados de acordo com as regras de negócio
 
 ### 📁 Requisito Funcional Geral - RFG1
 
@@ -361,6 +362,10 @@ _Referência_
 
 - http://localhost:8081/ecommerce/swagger-ui.html
 
+_Referência_
+
+- https://springdoc.org/faq.html
+
 ✅ **Versionamento de API**
 
 - /v1/users
@@ -423,6 +428,7 @@ _Referência_
 _Referências_
 
 - https://www.4devs.com.br/
+- https://www.mockaroo.com/
 
 ## 💾 Ferramentas
 

@@ -91,7 +91,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserEntity> findByNameAndEmailWithQueryMethods(String name, String email) {
+    public List<UserEntity> findByNameAndEmailWithQueryMethod(String name, String email) {
         List<UserEntity> userEntityList = repository.findByNameContainingOrEmailContainingAllIgnoreCase(name, email);
 
         log.info("Users found={}", userEntityList);
