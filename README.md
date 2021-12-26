@@ -331,7 +331,7 @@ Principais módulos:
     - Data
     - Validation
 
-Alguma das implementações:
+Algumas das implementações:
 
 - Arquivo de configuração
 - ResponseStatus x ResponseEntity
