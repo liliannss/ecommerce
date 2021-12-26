@@ -10,7 +10,7 @@ As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framew
 
 ## Desafio Proposto 🕹
 
-O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema e-commerce que
+O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema E-commerce que
 deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
 
 Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
