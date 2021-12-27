@@ -346,7 +346,7 @@ _Referência_
 
 ✅ **Collections Postman**
 
-✅ **Logs**
+✅ **Logs com @Log4j2**
 
 ✅ **Classe Embeddable**
 
