@@ -128,7 +128,6 @@ ________________________________________________________________________________
     - CPF
     - CEP
     - Número da residência
-    - Telefone fixo
     - Telefone celular
     - E-mail
 
