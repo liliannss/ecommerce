@@ -330,11 +330,11 @@ Principais módulos:
 
 Algumas das implementações:
 
-- Arquivo de configuração
+- Arquivo de configuração (application.properties)
 - ResponseStatus x ResponseEntity
-- Validações com Spring
+- Validações com Spring utilizando Bean Validation
 - Customização de atributos com Jackson (@JsonProperty)
-- Variáveis com Spring
+- Variáveis com Spring utilizando o @Value
 
 ✅ **H2**
 
