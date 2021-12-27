@@ -209,6 +209,7 @@ ________________________________________________________________________________
 ## 📁 Requisitos Não Funcionais
 
 _________________________________________________________________________________
+Sugestão de tecnologias para desenvolvimento inicial:
 
 - Linguagem de Programação
     - Java 11
