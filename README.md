@@ -328,15 +328,15 @@ Principais módulos:
     - Data
     - Validation
 
-Algumas das implementações:
+Algumas das principais implementações:
 
 - Arquivo de configuração (application.properties)
 - ResponseStatus x ResponseEntity
 - Validações com Spring utilizando Bean Validation
-- Customização de atributos com Jackson (@JsonProperty)
+- Customização de atributos com Jackson utilizando @JsonProperty
 - Variáveis com Spring utilizando o @Value
 
-✅ **H2**
+✅ **Banco de Dados H2**
 
 - http://localhost:8081/ecommerce/h2-console
 
@@ -354,9 +354,9 @@ _Referência_
 
 ✅ **ModelMapper**
 
-✅ **Lombok**
+✅ **Anotações Lombok**
 
-✅ **Swagger**
+✅ **Documentação com Swagger**
 
 - http://localhost:8081/ecommerce/swagger-ui.html
 
@@ -413,13 +413,13 @@ _Referência_
 
 - https://medium.com/cwi-software/versionar-sua-base-de-dados-com-spring-boot-e-flyway-be4081ddc7e5
 
-✅ **Maven**
+✅ **Comandos básicos do Maven**
 
 _Referência_
 
 - https://gist.github.com/erkobridee/3287943
 
-✅ **Readme**
+✅ **Arquivo Readme**
 
 ✅ **Mocks**
 
@@ -432,11 +432,11 @@ _Referências_
 
 ✅ **IntelliJ**
 
-✅ **Git**
+✅ **Básico do Git**
 
-✅ **GitHub**
+✅ **Básico do GitHub**
 
-✅ **cURL**
+✅ **Requisições utilizando o cURL**
 
 ✅ **Postman**
 
