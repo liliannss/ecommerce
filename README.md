@@ -333,7 +333,7 @@ Algumas das implementações:
 - Arquivo de configuração
 - ResponseStatus x ResponseEntity
 - Validações com Spring
-- Anotações Jackson
+- Customização de atributos com Jackson (@JsonProperty)
 - Variáveis com Spring
 
 ✅ **H2**
