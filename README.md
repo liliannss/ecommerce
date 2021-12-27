@@ -344,7 +344,7 @@ _Referência_
 
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
-✅ **Collections**
+✅ **Collections Postman**
 
 ✅ **Logs**
 
