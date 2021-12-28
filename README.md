@@ -81,7 +81,7 @@ ________________________________________________________________________________
     - Valor
     - Nome da cor
     - Modelagem
-        - Modelagens disponíveis:
+        - Modelos disponíveis:
             - Masculina Gola Olímpica
             - Feminina Gola U
             - Feminina Gola Olímpica
