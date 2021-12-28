@@ -54,7 +54,7 @@ ________________________________________________________________________________
 
 **Representação do Negócio**
 
-- O sistema deverá suportar as operações de cadastro, consulta, atualização e remoção de camisetas
+- O sistema deverá suportar as operações de inserção, consulta, atualização e remoção de camisetas
 - Será possível realizar a consulta de camisetas por modelo
 - Será possível realizar a consulta camisetas por valor
 - Será possível realizar a consulta camisetas por cor
