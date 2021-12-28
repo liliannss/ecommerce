@@ -1,6 +1,6 @@
 # PROJETO CRIADO PARA FINS DE ESTUDO 📒
 
-Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo demonstrar alguns conceitos e tecnologias que eventualmente irão auxiliar na implementação do desafio proposto.
+Este projeto, desenvolvido no decorrer de um grupo de estudos, tem como objetivo demonstrar **alguns** conceitos e tecnologias que eventualmente irão auxiliar na implementação do desafio proposto.
 
 As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framework**.
 
@@ -11,7 +11,7 @@ As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framew
 ## Desafio Proposto 🕹
 
 O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema E-commerce que
-deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando.
+deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando. Avalie também a necessidade de construção de outros _Microsservices_, além dos mapeados aqui.
 
 Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
 
@@ -112,10 +112,14 @@ ________________________________________________________________________________
 - Adicionar campo livre para que o usuário avalie o produto assim que a venda for entregue
 - O campo de avaliação deverá constar na consulta de produtos
 
+**Implementação**
+
+- Crie um _Microsservice_ de Produto com o endpoint correspondente (**CREATE**)
+
 **Sugestão**
 
 - Adicionar novas regras de negócio
-- Implementar as demais operações de CRUD
+- Identifique a necessidade de implementação das demais operações de CRUD
 
 ### 💻 Cadastro de Usuário
 
@@ -154,10 +158,14 @@ ________________________________________________________________________________
 
 - RFG1 (Requisito Funcional Geral)
 
+**Implementação**
+
+- Crie um _Microsservice_ de Usuário com os endpoints correspondentes (**CREATE / READ**)
+
 **Sugestão**
 
 - Adicionar novas regras de negócio
-- Implementar as demais operações de CRUD
+- Identifique a necessidade de implementação das demais operações de CRUD
 
 ### 💻 Cadastro de Venda
 
@@ -184,10 +192,14 @@ ________________________________________________________________________________
 
 - A venda deverá ser inserida no Banco de Dados de acordo com as regras de negócio
 
+**Implementação**
+
+- Crie um _Microsservice_ de Venda com o endpoint correspondente (**CREATE**)
+
 **Sugestão**
 
 - Adicionar novas regras de negócio
-- Implementar as demais operações de CRUD
+- Identifique a necessidade de implementação das demais operações de CRUD
 
 ### 💻 Cadastro de Entrega
 
@@ -200,6 +212,15 @@ ________________________________________________________________________________
 
 - Deverá ser informado ao usuário o valor do frete e o prazo de entrega
 - A entrega deverá ser inserida no Banco de Dados de acordo com as regras de negócio
+
+**Implementação**
+
+- Crie um _Microsservice_ de Entrega com o endpoint correspondente (**CREATE**)
+
+**Sugestão**
+
+- Adicionar novas regras de negócio
+- Identifique a necessidade de implementação das demais operações de CRUD
 
 ### 📁 Requisito Funcional Geral - RFG1
 
