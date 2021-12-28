@@ -11,7 +11,7 @@ As tecnologias apresentadas aqui são direcionadas ao **Java** e **Spring Framew
 ## Desafio Proposto 🕹
 
 O desafio consiste, com base em um escopo definido parcialmente (incompleto), na criação de um sistema E-commerce que
-deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando. Avalie também a necessidade de construção de outros _Microsservices_, além dos mapeados aqui.
+deverá ser corrigido, caso haja necessidade, e evoluído a critério da pessoa que está implementando. Avalie também a necessidade de construção de outros _Microservices_, além dos mapeados aqui.
 
 Também fica a critério a escolha das tecnologias e arquitetura que serão utilizadas.
 
@@ -114,7 +114,7 @@ ________________________________________________________________________________
 
 **Implementação**
 
-- Crie um _Microsservice_ de Produto com o endpoint correspondente (**CREATE**)
+- Crie um _Microservice_ de Produto com o endpoint correspondente (**CREATE**)
 
 **Sugestão**
 
@@ -160,7 +160,7 @@ ________________________________________________________________________________
 
 **Implementação**
 
-- Crie um _Microsservice_ de Usuário com os endpoints correspondentes (**CREATE / READ**)
+- Crie um _Microservice_ de Usuário com os endpoints correspondentes (**CREATE / READ**)
 
 **Sugestão**
 
@@ -194,7 +194,7 @@ ________________________________________________________________________________
 
 **Implementação**
 
-- Crie um _Microsservice_ de Venda com o endpoint correspondente (**CREATE**)
+- Crie um _Microservice_ de Venda com o endpoint correspondente (**CREATE**)
 
 **Sugestão**
 
@@ -215,7 +215,7 @@ ________________________________________________________________________________
 
 **Implementação**
 
-- Crie um _Microsservice_ de Entrega com o endpoint correspondente (**CREATE**)
+- Crie um _Microservice_ de Entrega com o endpoint correspondente (**CREATE**)
 
 **Sugestão**
 
