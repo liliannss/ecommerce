@@ -324,7 +324,7 @@ ________________________________________________________________________________
 
 ## Fundamentos - Tecnologias - Ferramentas
 
-Fundamentos, Tecnologias e Ferramentas básicos abordados no decorrer dos encontros e recomendados para estudo.
+Fundamentos, Tecnologias / Implementações e Ferramentas básicos abordados no decorrer dos encontros e recomendados para estudo.
 _________________________________________________________________________________
 
 ## 💾 Fundamentos
@@ -338,7 +338,11 @@ Principais conceitos:
 - Métodos HTTP
 - Códigos de Status HTTP
 
-## 💾 Tecnologias
+✅ **Classe Embeddable**
+
+✅ **DTO (Data transfer object)**
+
+## 💾 Tecnologias / Implementações
 
 ✅ **Spring Framework**
 
@@ -365,13 +369,7 @@ _Referência_
 
 - https://howtodoinjava.com/spring-boot2/h2-database-example/
 
-✅ **Collections Postman**
-
-✅ **Logs com @Log4j2**
-
-✅ **Classe Embeddable**
-
-✅ **DTO (Data transfer object)**
+✅ **@Log4j2**
 
 ✅ **ModelMapper**
 
@@ -459,7 +457,7 @@ _Referências_
 
 ✅ **Requisições utilizando o cURL**
 
-✅ **Postman**
+✅ **Requisições / Collections Postman**
 
 ## 🔨 Melhorias
 
