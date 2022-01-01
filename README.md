@@ -333,7 +333,7 @@ ________________________________________________________________________________
 
 ✅ **Rest**
 
-Principais conceitos:
+_Principais conceitos:_
 
 - Métodos HTTP
 - Códigos de Status HTTP
@@ -346,7 +346,7 @@ Principais conceitos:
 
 ✅ **Spring Framework**
 
-Principais módulos:
+_Principais módulos:_
 
 - Boot
     - Web
@@ -358,10 +358,12 @@ Algumas das principais implementações:
 - Arquivo de configuração (application.properties)
 - ResponseStatus x ResponseEntity
 - Validações com Spring utilizando Bean Validation
-- Customização de atributos com Jackson utilizando @JsonProperty
-- Variáveis com Spring utilizando o @Value
+- Customização de atributos com Jackson utilizando a anotação @JsonProperty
+- Variáveis com Spring utilizando a anotação @Value
 
 ✅ **Banco de Dados H2**
+
+_Projeto Base_
 
 - http://localhost:8081/ecommerce/h2-console
 
@@ -377,6 +379,8 @@ _Referência_
 
 ✅ **Documentação com Swagger**
 
+_Projeto Base_
+
 - http://localhost:8081/ecommerce/swagger-ui.html
 
 _Referência_
@@ -385,9 +389,13 @@ _Referência_
 
 ✅ **Versionamento de API**
 
+_Projeto Base_
+
 - /v1/users
 
 ✅ **Context Path**
+
+_Projeto Base_
 
 - /ecommerce
 
@@ -417,9 +425,13 @@ _Referência_
 
 ✅ **Arquivo data.sql**
 
+_Nota_
+
 - A nomenclatura do arquivo deve ser data.sql
 
 ✅ **Flyway**
+
+_Notas_
 
 - Boas práticas:
     - V01__criar_e_registrar_categorias.sql
@@ -449,11 +461,11 @@ _Referências_
 
 ## 💾 Ferramentas
 
-✅ **IntelliJ**
+✅ **IDE IntelliJ**
 
-✅ **Básico do Git**
+✅ **Comandos básicos do Git**
 
-✅ **Básico do GitHub**
+✅ **Comandos básicos do GitHub**
 
 ✅ **Requisições utilizando o cURL**
 
